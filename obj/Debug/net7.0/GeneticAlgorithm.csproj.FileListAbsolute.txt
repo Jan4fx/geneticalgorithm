@@ -1,0 +1,15 @@
+/Users/joshuanewton/Desktop/GeneticAlgorithm/bin/Debug/net7.0/GeneticAlgorithm
+/Users/joshuanewton/Desktop/GeneticAlgorithm/bin/Debug/net7.0/GeneticAlgorithm.deps.json
+/Users/joshuanewton/Desktop/GeneticAlgorithm/bin/Debug/net7.0/GeneticAlgorithm.runtimeconfig.json
+/Users/joshuanewton/Desktop/GeneticAlgorithm/bin/Debug/net7.0/GeneticAlgorithm.dll
+/Users/joshuanewton/Desktop/GeneticAlgorithm/bin/Debug/net7.0/GeneticAlgorithm.pdb
+/Users/joshuanewton/Desktop/GeneticAlgorithm/obj/Debug/net7.0/GeneticAlgorithm.csproj.AssemblyReference.cache
+/Users/joshuanewton/Desktop/GeneticAlgorithm/obj/Debug/net7.0/GeneticAlgorithm.GeneratedMSBuildEditorConfig.editorconfig
+/Users/joshuanewton/Desktop/GeneticAlgorithm/obj/Debug/net7.0/GeneticAlgorithm.AssemblyInfoInputs.cache
+/Users/joshuanewton/Desktop/GeneticAlgorithm/obj/Debug/net7.0/GeneticAlgorithm.AssemblyInfo.cs
+/Users/joshuanewton/Desktop/GeneticAlgorithm/obj/Debug/net7.0/GeneticAlgorithm.csproj.CoreCompileInputs.cache
+/Users/joshuanewton/Desktop/GeneticAlgorithm/obj/Debug/net7.0/GeneticAlgorithm.dll
+/Users/joshuanewton/Desktop/GeneticAlgorithm/obj/Debug/net7.0/refint/GeneticAlgorithm.dll
+/Users/joshuanewton/Desktop/GeneticAlgorithm/obj/Debug/net7.0/GeneticAlgorithm.pdb
+/Users/joshuanewton/Desktop/GeneticAlgorithm/obj/Debug/net7.0/GeneticAlgorithm.genruntimeconfig.cache
+/Users/joshuanewton/Desktop/GeneticAlgorithm/obj/Debug/net7.0/ref/GeneticAlgorithm.dll

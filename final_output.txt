@@ -1,0 +1,13 @@
+Best Schedule:
+Fitness: 8.2
+Activity: SLA100A, Time: 11:31:00, Room: Beach201, Facilitator: Zeldin
+Activity: SLA100B, Time: 14:23:00, Room: Roman201, Facilitator: Glen
+Activity: SLA191A, Time: 11:25:00, Room: Loft206, Facilitator: Glen
+Activity: SLA191B, Time: 13:23:00, Room: Beach301, Facilitator: Lock
+Activity: SLA201, Time: 14:11:00, Room: Beach201, Facilitator: Glen
+Activity: SLA291, Time: 10:23:00, Room: Roman201, Facilitator: Banks
+Activity: SLA303, Time: 13:24:00, Room: Beach201, Facilitator: Banks
+Activity: SLA304, Time: 13:38:00, Room: Frank119, Facilitator: Dr. Tyler
+Activity: SLA394, Time: 10:13:00, Room: Roman201, Facilitator: Singer
+Activity: SLA449, Time: 10:42:00, Room: Loft206, Facilitator: Shaw
+Activity: SLA451, Time: 14:49:00, Room: Loft310, Facilitator: Singer
