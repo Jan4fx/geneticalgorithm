@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "qpY4sben4f2vBzGQvRUPvnaTglaypk0pwi2YkUIEIN2zOnELVIQoRxVwWlqNwyZ1AxNeSBT+R7Uaq65jsGibUA==",
+  "dgSpecHash": "XuMH3Quv4xiicaZudlnkBn6Xsz320hQ0tyQc55EqV41H1EZf7n7OxyTy+t6OfBNHXVf6XLb88Z5d8TBs4+/t3A==",
   "success": true,
   "projectFilePath": "/Users/joshuanewton/Desktop/GeneticAlgorithm/GeneticAlgorithm.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/joshuanewton/.nuget/packages/mathnet.numerics/5.0.0/mathnet.numerics.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

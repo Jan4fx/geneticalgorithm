@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.IO;
 using Data;
+using MathNet.Numerics; // Added for Softmax
+
 
 
 //tournament selection randomly pick 10 out of the grouup and select top 3 
@@ -15,6 +17,18 @@ namespace GeneticAlgorithmSpaceUtilization
         public Room Room { get; set; } = new Room();
         public TimeSpan TimeSlot { get; set; }
         public Facilitator Facilitator { get; set; } = new Facilitator();
+    }
+
+    public static class Softmax
+    {
+        public static double[] Compute(IEnumerable<double> input)
+        {
+            double max = input.Max();
+            double[] expValues = input.Select(x => Math.Exp(x - max)).ToArray();
+            double sumExp = expValues.Sum();
+
+            return expValues.Select(x => x / sumExp).ToArray();
+        }
     }
 
     public class Schedule
@@ -115,8 +129,13 @@ namespace GeneticAlgorithmSpaceUtilization
                 prevAverageFitness = currentAverageFitness;
                 currentAverageFitness = population.Average(schedule => schedule.Fitness);
 
+                // Softmax normalization
+                var fitnessValues = population.Select(schedule => schedule.Fitness).ToArray();
+                //var softmaxProbabilities = SpecialFunctions.Softmax(fitnessValues);
+                double[] softmaxProbabilities = Softmax.Compute(fitnessValues);
+
                 // Select parents for reproduction based on their fitness
-                List<Schedule> parents = SelectParents(population);
+                List<Schedule> parents = SelectParents(population, softmaxProbabilities);
 
                 // Perform crossover and mutation to create offspring
                 List<Schedule> offspring = CrossoverAndMutation(parents);
@@ -236,6 +255,38 @@ namespace GeneticAlgorithmSpaceUtilization
         {
             return population.OrderByDescending(schedule => schedule.Fitness).Take(population.Count / 2).ToList();
         }
+
+        static List<Schedule> SelectParents(List<Schedule> population, double[] probabilities)
+        {
+            List<Schedule> parents = new List<Schedule>();
+
+            for (int i = 0; i < population.Count / 2; i++)
+            {
+                int selectedIndex = SelectIndexByProbability(probabilities);
+                parents.Add(population[selectedIndex]);
+            }
+
+            return parents;
+        }
+
+            // Utility method to select index based on probability distribution
+        static int SelectIndexByProbability(double[] probabilities)
+        {
+            double randomNumber = random.NextDouble();
+            double cumulativeProbability = 0.0;
+
+            for (int i = 0; i < probabilities.Length; i++)
+            {
+                cumulativeProbability += probabilities[i];
+                if (randomNumber <= cumulativeProbability)
+                {
+                    return i;
+                }
+            }
+
+            return probabilities.Length - 1;
+        }
+
         static List<Schedule> CrossoverAndMutation(List<Schedule> parents)
         {
             List<Schedule> offspring = new List<Schedule>();

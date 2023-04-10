@@ -2,4 +2,5 @@ To Set Up the Project
 cd into folder
 dotnet new console
 dotnet build
+dotnet add package MathNet.Numerics
 dotnet run

@@ -13,3 +13,5 @@
 /Users/joshuanewton/Desktop/GeneticAlgorithm/obj/Debug/net7.0/GeneticAlgorithm.pdb
 /Users/joshuanewton/Desktop/GeneticAlgorithm/obj/Debug/net7.0/GeneticAlgorithm.genruntimeconfig.cache
 /Users/joshuanewton/Desktop/GeneticAlgorithm/obj/Debug/net7.0/ref/GeneticAlgorithm.dll
+/Users/joshuanewton/Desktop/GeneticAlgorithm/bin/Debug/net7.0/MathNet.Numerics.dll
+/Users/joshuanewton/Desktop/GeneticAlgorithm/obj/Debug/net7.0/GeneticAlgorithm.csproj.CopyComplete
