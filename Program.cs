@@ -23,7 +23,7 @@ namespace GeneticAlgorithmSpaceUtilization
         public double Fitness { get; set; }
     }
 
-    class Program
+    public class Program
     {
         private const int PopulationSize = 1000;
         private const int Generations = 200;
@@ -133,7 +133,7 @@ namespace GeneticAlgorithmSpaceUtilization
 
                 // Find the best schedule in the current generation and print it to the file
                 Schedule bestSchedule = population.OrderByDescending(schedule => schedule.Fitness).First();
-                PrintScheduleToFile(bestSchedule); // Remove 'generation' variable from the method call
+                PrintScheduleToFile(bestSchedule, generation); // Remove 'generation' variable from the method call
             }
 
             // Return the best schedule found
@@ -292,10 +292,11 @@ namespace GeneticAlgorithmSpaceUtilization
                 }
             }
         }
-        static void PrintScheduleToFile(Schedule bestSchedule)
+        static void PrintScheduleToFile(Schedule bestSchedule, int generation)
         {
             using (StreamWriter outputFile = new StreamWriter("output.txt", true))
             {
+                outputFile.WriteLine($"Generation {generation}:");
                 outputFile.WriteLine("Best Schedule:");
                 outputFile.WriteLine("Fitness: " + bestSchedule.Fitness);
 
