@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.IO;
 using Data;
-using MathNet.Numerics; // Added for Softmax
+using MathNet.Numerics; 
 
 
 
-//tournament selection randomly pick 10 out of the grouup and select top 3 
+//tournament selection randomly pick 10 out of the group and select top 3 
 namespace GeneticAlgorithmSpaceUtilization
 {
 
@@ -56,16 +56,9 @@ namespace GeneticAlgorithmSpaceUtilization
             Schedule bestSchedule = GeneticAlgorithm(population);
 
             // Overwrite the "output.txt" file with the best schedule found
-            using (StreamWriter outputFile = new StreamWriter("final_output.txt"))
-            {
-                outputFile.WriteLine("Best Schedule:");
-                outputFile.WriteLine("Fitness: " + bestSchedule.Fitness);
+            //PrintFinalScheduleToFile(bestSchedule);
+            ScheduleOutput.PrintFinalScheduleToFile(bestSchedule);
 
-                foreach (Assignment assignment in bestSchedule.Assignments)
-                {
-                    outputFile.WriteLine($"Activity: {assignment.Activity.Name}, Time: {assignment.TimeSlot}, Room: {assignment.Room.Name}, Facilitator: {assignment.Facilitator.Name}");
-                }
-            }
         }
 
 
@@ -152,7 +145,9 @@ namespace GeneticAlgorithmSpaceUtilization
 
                 // Find the best schedule in the current generation and print it to the file
                 Schedule bestSchedule = population.OrderByDescending(schedule => schedule.Fitness).First();
-                PrintScheduleToFile(bestSchedule, generation); // Remove 'generation' variable from the method call
+                //PrintScheduleToFile(bestSchedule, generation); // Remove 'generation' variable from the method call
+                ScheduleOutput.PrintScheduleToFile(bestSchedule, generation);
+
             }
 
             // Return the best schedule found
@@ -341,22 +336,6 @@ namespace GeneticAlgorithmSpaceUtilization
                     schedule.Assignments[i].TimeSlot = new TimeSpan(new Random().Next(10, 16), new Random().Next(60), 0);
                     schedule.Assignments[i].Facilitator = facilitators[new Random().Next(facilitators.Count)];
                 }
-            }
-        }
-        static void PrintScheduleToFile(Schedule bestSchedule, int generation)
-        {
-            using (StreamWriter outputFile = new StreamWriter("output.txt", true))
-            {
-                outputFile.WriteLine($"Generation {generation}:");
-                outputFile.WriteLine("Best Schedule:");
-                outputFile.WriteLine("Fitness: " + bestSchedule.Fitness);
-
-                foreach (Assignment assignment in bestSchedule.Assignments)
-                {
-                    outputFile.WriteLine($"Activity: {assignment.Activity.Name}, Time: {assignment.TimeSlot}, Room: {assignment.Room.Name}, Facilitator: {assignment.Facilitator.Name}");
-                }
-
-                outputFile.WriteLine(); // Add an empty line to separate generations
             }
         }
 }
