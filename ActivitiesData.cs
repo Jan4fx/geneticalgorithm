@@ -5,9 +5,11 @@ namespace Data
     public class Activity
     {
         public string Name { get; set; }
+        public TimeSpan StartTime { get; set; }
         public List<Preferred> Preferred { get; set; } = new List<Preferred>();
         public List<Other> Other { get; set; } = new List<Other>();
         public int ExpectedEnrollment { get; set; }
+        public DayOfWeek Day { get; set; }
     }
     public class Preferred
     {

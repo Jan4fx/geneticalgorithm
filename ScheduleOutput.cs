@@ -1,9 +1,13 @@
 using System;
 using System.IO;
 using GeneticAlgorithmSpaceUtilization;
+using Data;
+using System.Linq;
 
 public static class ScheduleOutput
 {
+    private static DayOfWeek[] DayOrder = { DayOfWeek.Monday, DayOfWeek.Wednesday, DayOfWeek.Friday };
+
     public static void PrintScheduleToFile(Schedule bestSchedule, int generation)
     {
         using (StreamWriter outputFile = new StreamWriter("output.txt", true))
@@ -12,9 +16,11 @@ public static class ScheduleOutput
             outputFile.WriteLine("Best Schedule:");
             outputFile.WriteLine("Fitness: " + bestSchedule.Fitness);
 
-            foreach (Assignment assignment in bestSchedule.Assignments)
+            var sortedAssignments = bestSchedule.Assignments.Where(a => DayOrder.Contains(a.Day)).OrderBy(a => Array.IndexOf(DayOrder, a.Day)).ThenBy(a => a.TimeSlot);
+
+            foreach (Assignment assignment in sortedAssignments)
             {
-                outputFile.WriteLine($"Activity: {assignment.Activity.Name}, Time: {assignment.TimeSlot}, Room: {assignment.Room.Name}, Facilitator: {assignment.Facilitator.Name}");
+                outputFile.WriteLine($"Activity: {assignment.Activity.Name}, Day: {assignment.Day}, Time: {assignment.TimeSlot}, Room: {assignment.Room.Name}, Facilitator: {assignment.Facilitator.Name}");
             }
 
             outputFile.WriteLine(); // Add an empty line to separate generations
@@ -28,9 +34,11 @@ public static class ScheduleOutput
             outputFile.WriteLine("Best Schedule:");
             outputFile.WriteLine("Fitness: " + bestSchedule.Fitness);
 
-            foreach (Assignment assignment in bestSchedule.Assignments)
+            var sortedAssignments = bestSchedule.Assignments.Where(a => DayOrder.Contains(a.Day)).OrderBy(a => Array.IndexOf(DayOrder, a.Day)).ThenBy(a => a.TimeSlot);
+
+            foreach (Assignment assignment in sortedAssignments)
             {
-                outputFile.WriteLine($"Activity: {assignment.Activity.Name}, Time: {assignment.TimeSlot}, Room: {assignment.Room.Name}, Facilitator: {assignment.Facilitator.Name}");
+                outputFile.WriteLine($"Activity: {assignment.Activity.Name}, Day: {assignment.Day}, Time: {assignment.TimeSlot}, Room: {assignment.Room.Name}, Facilitator: {assignment.Facilitator.Name}");
             }
         }
     }

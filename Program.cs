@@ -6,19 +6,9 @@ using Data;
 using MathNet.Numerics; 
 
 
-
-//tournament selection randomly pick 10 out of the group and select top 3 
+//Questions to ask, are activities scheduled everyday of the three days
 namespace GeneticAlgorithmSpaceUtilization
 {
-
-    public class Assignment
-        {
-        public Activity Activity { get; set; } = new Activity();
-        public Room Room { get; set; } = new Room();
-        public TimeSpan TimeSlot { get; set; }
-        public Facilitator Facilitator { get; set; } = new Facilitator();
-    }
-
     public static class Softmax
     {
         public static double[] Compute(IEnumerable<double> input)
@@ -31,19 +21,12 @@ namespace GeneticAlgorithmSpaceUtilization
         }
     }
 
-    public class Schedule
-    {
-        public List<Assignment> Assignments { get; set; } = new List<Assignment>();
-        public double Fitness { get; set; }
-    }
-
     public class Program
     {
         private const int PopulationSize = 1000;
         private const int Generations = 200;
         private const double MutationRate = 0.01;
         private const double FitnessImprovementThreshold = 0.01;
-
         static List<Activity> activities;
         static List<Room> rooms;
         static List<Facilitator> facilitators;
@@ -59,7 +42,6 @@ namespace GeneticAlgorithmSpaceUtilization
 
         }
 
-
         static void InitializeData()
         {
             // Initialize example activities
@@ -70,7 +52,21 @@ namespace GeneticAlgorithmSpaceUtilization
 
             // Initialize example facilitators
             facilitators = FacilitatorsData.GetFacilitators();
+
+            // Restrict activity start times
+            List<int> allowedStartHours = new List<int> { 10, 11, 12, 13, 14, 15 };
+            foreach (Activity activity in activities)
+            {
+                activity.StartTime = new TimeSpan(allowedStartHours[random.Next(allowedStartHours.Count)], 0, 0);
+            }
+            DayOfWeek[] allowedDays = new DayOfWeek[] { DayOfWeek.Monday, DayOfWeek.Wednesday, DayOfWeek.Friday };
+            foreach (Activity activity in activities)
+            {
+                activity.StartTime = new TimeSpan(allowedStartHours[random.Next(allowedStartHours.Count)], 0, 0);
+                activity.Day = allowedDays[random.Next(allowedDays.Length)];
+    }
         }
+
 
         static List<Schedule> GenerateInitialPopulation(int size)
         {
@@ -87,6 +83,7 @@ namespace GeneticAlgorithmSpaceUtilization
                     assignment.Room = rooms[random.Next(rooms.Count)];
                     assignment.TimeSlot = new TimeSpan(random.Next(10, 16), random.Next(60), 0);
                     assignment.Facilitator = facilitators[random.Next(facilitators.Count)];
+                    assignment.Day = activity.Day;
 
                     schedule.Assignments.Add(assignment);
                 }
@@ -96,6 +93,7 @@ namespace GeneticAlgorithmSpaceUtilization
 
             return population;
         }
+
 
         static Schedule GeneticAlgorithm(List<Schedule> population)
         {
@@ -127,6 +125,7 @@ namespace GeneticAlgorithmSpaceUtilization
 
                 // Select parents for reproduction based on their fitness
                 //List<Schedule> parents = SelectParents(population, softmaxProbabilities);
+
                 //Tournament Selection
                 List<Schedule> parents = SelectParents(population, 10); // Change 10 to your desired tournament size
 
@@ -153,9 +152,6 @@ namespace GeneticAlgorithmSpaceUtilization
             // Return the best schedule found
             return population.OrderByDescending(schedule => schedule.Fitness).First();
         }
-
-
-
 
 
     static void EvaluateFitness(List<Schedule> population)
@@ -212,15 +208,16 @@ namespace GeneticAlgorithmSpaceUtilization
                         fitness -= 0.1;
                     }
 
+                    // Activity is scheduled at the same time on the same day with the same facilitator: -0.5
+                    if (schedule.Assignments.Any(a => a != assignment && a.Day == assignment.Day && a.TimeSlot == assignment.TimeSlot && a.Facilitator == assignment.Facilitator))
+                    {
+                        fitness -= 0.5;
+                    }
                     // Update the facilitator load count
                     facilitatorLoad[assignment.Facilitator] += 1;
-                    
                 }
 
                 // Facilitator load penalties and rewards
-
-                //difference between facilitator and activity facilitator? ignored activity facilitator
-                //activity facilitator is the time that they facilitate and if they do more than one at same time
                 foreach (var kvp in facilitatorLoad)
                 {
                     Facilitator facilitator = kvp.Key;
@@ -238,18 +235,9 @@ namespace GeneticAlgorithmSpaceUtilization
                         }
                     }
                 }
-
-                // Activity-specific adjustments
-                //... Add the activity-specific adjustments here
-
                 schedule.Fitness = fitness;
             }
         }
-
-        //static List<Schedule> SelectParents(List<Schedule> population)
-        //{
-          //  return population.OrderByDescending(schedule => schedule.Fitness).Take(population.Count / 2).ToList();
-        //}
         static List<Schedule> SelectParents(List<Schedule> population, int tournamentSize)
         {
             List<Schedule> parents = new List<Schedule>();
@@ -281,7 +269,6 @@ namespace GeneticAlgorithmSpaceUtilization
             return best;
         }
 
-
         static List<Schedule> SelectParents(List<Schedule> population, double[] probabilities)
         {
             List<Schedule> parents = new List<Schedule>();
@@ -295,7 +282,7 @@ namespace GeneticAlgorithmSpaceUtilization
             return parents;
         }
 
-            // Utility method to select index based on probability distribution
+        // Utility method to select index based on probability distribution
         static int SelectIndexByProbability(double[] probabilities)
         {
             double randomNumber = random.NextDouble();
@@ -337,7 +324,6 @@ namespace GeneticAlgorithmSpaceUtilization
             return offspring;
         }
 
-
         static Schedule Crossover(Schedule parent1, Schedule parent2)
         {
             Schedule child = new Schedule();
@@ -359,6 +345,8 @@ namespace GeneticAlgorithmSpaceUtilization
 
         static void Mutate(Schedule schedule)
         {
+            DayOfWeek[] allowedDays = new DayOfWeek[] { DayOfWeek.Monday, DayOfWeek.Wednesday, DayOfWeek.Friday };
+
             for (int i = 0; i < schedule.Assignments.Count; i++)
             {
                 if (new Random().NextDouble() < MutationRate)
@@ -366,8 +354,10 @@ namespace GeneticAlgorithmSpaceUtilization
                     schedule.Assignments[i].Room = rooms[new Random().Next(rooms.Count)];
                     schedule.Assignments[i].TimeSlot = new TimeSpan(new Random().Next(10, 16), new Random().Next(60), 0);
                     schedule.Assignments[i].Facilitator = facilitators[new Random().Next(facilitators.Count)];
+                    schedule.Assignments[i].Day = allowedDays[new Random().Next(allowedDays.Length)];
                 }
             }
         }
-}
+
+    }   
 }
