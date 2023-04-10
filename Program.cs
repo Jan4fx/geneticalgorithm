@@ -54,8 +54,6 @@ namespace GeneticAlgorithmSpaceUtilization
             InitializeData();
             List<Schedule> population = GenerateInitialPopulation(PopulationSize);
             Schedule bestSchedule = GeneticAlgorithm(population);
-
-            // Overwrite the "output.txt" file with the best schedule found
             //PrintFinalScheduleToFile(bestSchedule);
             ScheduleOutput.PrintFinalScheduleToFile(bestSchedule);
 
@@ -128,7 +126,9 @@ namespace GeneticAlgorithmSpaceUtilization
                 double[] softmaxProbabilities = Softmax.Compute(fitnessValues);
 
                 // Select parents for reproduction based on their fitness
-                List<Schedule> parents = SelectParents(population, softmaxProbabilities);
+                //List<Schedule> parents = SelectParents(population, softmaxProbabilities);
+                //Tournament Selection
+                List<Schedule> parents = SelectParents(population, 10); // Change 10 to your desired tournament size
 
                 // Perform crossover and mutation to create offspring
                 List<Schedule> offspring = CrossoverAndMutation(parents);
@@ -246,10 +246,41 @@ namespace GeneticAlgorithmSpaceUtilization
             }
         }
 
-        static List<Schedule> SelectParents(List<Schedule> population)
+        //static List<Schedule> SelectParents(List<Schedule> population)
+        //{
+          //  return population.OrderByDescending(schedule => schedule.Fitness).Take(population.Count / 2).ToList();
+        //}
+        static List<Schedule> SelectParents(List<Schedule> population, int tournamentSize)
         {
-            return population.OrderByDescending(schedule => schedule.Fitness).Take(population.Count / 2).ToList();
+            List<Schedule> parents = new List<Schedule>();
+
+            for (int i = 0; i < population.Count / 2; i++)
+            {
+                Schedule bestParent = TournamentSelection(population, tournamentSize);
+                parents.Add(bestParent);
+            }
+
+            return parents;
         }
+
+        static Schedule TournamentSelection(List<Schedule> population, int tournamentSize)
+        {
+            Schedule best = null;
+
+            for (int i = 0; i < tournamentSize; i++)
+            {
+                int randomIndex = random.Next(population.Count);
+                Schedule current = population[randomIndex];
+
+                if (best == null || current.Fitness > best.Fitness)
+                {
+                    best = current;
+                }
+            }
+
+            return best;
+        }
+
 
         static List<Schedule> SelectParents(List<Schedule> population, double[] probabilities)
         {
