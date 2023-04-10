@@ -10,11 +10,11 @@ namespace GeneticAlgorithmSpaceUtilization
 {
 
     public class Assignment
-    {
-        public Activity Activity { get; set; }
-        public Room Room { get; set; }
+        {
+        public Activity Activity { get; set; } = new Activity();
+        public Room Room { get; set; } = new Room();
         public TimeSpan TimeSlot { get; set; }
-        public Facilitator Facilitator { get; set; }
+        public Facilitator Facilitator { get; set; } = new Facilitator();
     }
 
     public class Schedule
@@ -33,6 +33,7 @@ namespace GeneticAlgorithmSpaceUtilization
         static List<Activity> activities;
         static List<Room> rooms;
         static List<Facilitator> facilitators;
+        static Random random = new Random();
         static void Main(string[] args)
         {
             File.WriteAllText("output.txt", string.Empty);
@@ -78,12 +79,9 @@ namespace GeneticAlgorithmSpaceUtilization
                 {
                     Assignment assignment = new Assignment();
                     assignment.Activity = activity;
-                    //assignment.Preferred = Preferred;
-                    assignment.Room = rooms[new Random().Next(rooms.Count)];
-                    assignment.TimeSlot = new TimeSpan(new Random().Next(10, 16), new Random().Next(60), 0);
-                    assignment.Facilitator = facilitators[new Random().Next(facilitators.Count)];
-
-                    //assignment.FacilitatorPreferences =
+                    assignment.Room = rooms[random.Next(rooms.Count)];
+                    assignment.TimeSlot = new TimeSpan(random.Next(10, 16), random.Next(60), 0);
+                    assignment.Facilitator = facilitators[random.Next(facilitators.Count)];
 
                     schedule.Assignments.Add(assignment);
                 }
@@ -106,6 +104,7 @@ namespace GeneticAlgorithmSpaceUtilization
             }
 
             while (generation < Generations || (currentAverageFitness - prevAverageFitness) / prevAverageFitness > FitnessImprovementThreshold)
+            //while (generation < Generations && (currentAverageFitness - prevAverageFitness) / prevAverageFitness > FitnessImprovementThreshold)
             {
                 generation++;
 

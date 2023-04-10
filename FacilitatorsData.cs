@@ -4,7 +4,7 @@ namespace Data
 {
     public class Facilitator
     {
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
     }
     
     public static class FacilitatorsData
