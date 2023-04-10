@@ -1,13 +1,13 @@
 Best Schedule:
-Fitness: 8.2
-Activity: SLA100A, Time: 11:31:00, Room: Beach201, Facilitator: Zeldin
-Activity: SLA100B, Time: 14:23:00, Room: Roman201, Facilitator: Glen
-Activity: SLA191A, Time: 11:25:00, Room: Loft206, Facilitator: Glen
-Activity: SLA191B, Time: 13:23:00, Room: Beach301, Facilitator: Lock
-Activity: SLA201, Time: 14:11:00, Room: Beach201, Facilitator: Glen
-Activity: SLA291, Time: 10:23:00, Room: Roman201, Facilitator: Banks
-Activity: SLA303, Time: 13:24:00, Room: Beach201, Facilitator: Banks
-Activity: SLA304, Time: 13:38:00, Room: Frank119, Facilitator: Dr. Tyler
-Activity: SLA394, Time: 10:13:00, Room: Roman201, Facilitator: Singer
-Activity: SLA449, Time: 10:42:00, Room: Loft206, Facilitator: Shaw
-Activity: SLA451, Time: 14:49:00, Room: Loft310, Facilitator: Singer
+Fitness: 7.6
+Activity: SLA100A, Time: 15:14:00, Room: Beach301, Facilitator: Glen
+Activity: SLA100B, Time: 14:15:00, Room: Beach201, Facilitator: Glen
+Activity: SLA191A, Time: 10:31:00, Room: Loft310, Facilitator: Lock
+Activity: SLA191B, Time: 10:17:00, Room: Loft206, Facilitator: Banks
+Activity: SLA201, Time: 15:07:00, Room: Beach301, Facilitator: Zeldin
+Activity: SLA291, Time: 15:45:00, Room: Loft310, Facilitator: Singer
+Activity: SLA303, Time: 11:22:00, Room: Beach201, Facilitator: Shaw
+Activity: SLA304, Time: 10:37:00, Room: Loft206, Facilitator: Glen
+Activity: SLA394, Time: 10:50:00, Room: Roman201, Facilitator: Numen
+Activity: SLA449, Time: 15:51:00, Room: Frank119, Facilitator: Shaw
+Activity: SLA451, Time: 12:41:00, Room: Loft310, Facilitator: Zeldin
