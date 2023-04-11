@@ -4,3 +4,8 @@ dotnet new console
 dotnet build
 dotnet add package MathNet.Numerics
 dotnet run
+
+        //populationsize 1000000
+        //Generation 18:
+        //Population: 2
+        //Best Fitness: 8.8

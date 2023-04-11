@@ -5,7 +5,7 @@ using System.IO;
 using Data;
 using MathNet.Numerics; 
 
-
+//Make two offspring instead of 1
 //Questions to ask, are activities scheduled everyday of the three days
 namespace GeneticAlgorithmSpaceUtilization
 {
@@ -25,10 +25,6 @@ namespace GeneticAlgorithmSpaceUtilization
     {
         //static List<float> generationFitness = new List<float>();
         private const int PopulationSize = 1000;
-        //populationsize 1000000
-        //Generation 18:
-        //Population: 2
-        //Best Fitness: 8.8
         private const int Generations = 100;
         private const double MutationRate = 0.01;
         private const double FitnessImprovementThreshold = 0.01;
@@ -120,14 +116,14 @@ namespace GeneticAlgorithmSpaceUtilization
                     generation++;
 
                     // Evaluate the fitness of the population
-                    EvaluateFitness(population);
+                    FitnessEvaluator.EvaluateFitness(population, facilitators);
 
                     // Compute the average fitness
                     //currentAverageFitness = population.Average(schedule => schedule.Fitness);
 
                     prevAverageFitness = currentAverageFitness;
                     ///Figure out if averaging
-                    currentAverageFitness = EvaluateFitness(population);
+                    currentAverageFitness = FitnessEvaluator.EvaluateFitness(population, facilitators);
 
                     // Softmax normalization
                     var fitnessValues = population.Select(schedule => schedule.Fitness).ToArray();
@@ -153,7 +149,7 @@ namespace GeneticAlgorithmSpaceUtilization
                     Schedule bestSchedule = offspring.OrderByDescending(schedule => schedule.Fitness).First();
                     outputFile.WriteLine($"Generation {generation}:");
                     outputFile.WriteLine($"Population: {population.Count}");
-                    outputFile.WriteLine("Best Fitness: " + EvaluateFitness(offspring));
+                    outputFile.WriteLine("Best Fitness: " + FitnessEvaluator.EvaluateFitness(offspring, facilitators));
                     outputFile.WriteLine("Best Schedule:");
 
                     var sortedAssignments = bestSchedule.Assignments.Where(a => DayOrder.Contains(a.Day)).OrderBy(a => Array.IndexOf(DayOrder, a.Day)).ThenBy(a => a.TimeSlot);
@@ -171,97 +167,6 @@ namespace GeneticAlgorithmSpaceUtilization
             return population.OrderByDescending(schedule => schedule.Fitness).First();
         }
 
-    static float EvaluateFitness(List<Schedule> population)
-    {
-        float totalFitness = 0;
-
-        foreach (Schedule schedule in population)
-        {
-                            double fitness = 0;
-
-                // Count the facilitator's load
-                Dictionary<Facilitator, int> facilitatorLoad = new Dictionary<Facilitator, int>();
-                foreach (Facilitator facilitator in facilitators)
-                {
-                    facilitatorLoad[facilitator] = 0;
-                }
-
-                foreach (Assignment assignment in schedule.Assignments)
-                {
-                    // Activity is scheduled at the same time in the same room as another of the activities: -0.5
-                    if (schedule.Assignments.Any(a => a != assignment && a.Room == assignment.Room && a.TimeSlot == assignment.TimeSlot))
-                    {
-                        fitness -= 0.5;
-                    }
-
-                    // Room size penalties and rewards
-                    if (assignment.Room.Capacity < assignment.Activity.ExpectedEnrollment)
-                    {
-                        fitness -= 0.5;
-                    }
-                    else if (assignment.Room.Capacity > 3 * assignment.Activity.ExpectedEnrollment)
-                    {
-                        fitness -= 0.2;
-                    }
-                    else if (assignment.Room.Capacity > 6 * assignment.Activity.ExpectedEnrollment)
-                    {
-                        fitness -= 0.4;
-                    }
-                    else
-                    {
-                        fitness += 0.3;
-                    }
-                    
-                    // Facilitator-related penalties and rewards
-                    if (assignment.Activity.Preferred.Any(p => p.Name == assignment.Facilitator.Name))
-                    {
-                        fitness += 0.5;
-                    }
-                    //change to backup
-                    else if (assignment.Activity.Other.Any(o => o.Name == assignment.Facilitator.Name))
-                    {
-                        fitness += 0.2;
-                    }
-                    else
-                    {
-                        fitness -= 0.1;
-                    }
-
-                    // Activity is scheduled at the same time on the same day with the same facilitator: -0.5
-                    if (schedule.Assignments.Any(a => a != assignment && a.Day == assignment.Day && a.TimeSlot == assignment.TimeSlot && a.Facilitator == assignment.Facilitator))
-                    {
-                        fitness -= 0.5;
-                    }
-                    // Update the facilitator load count
-                    facilitatorLoad[assignment.Facilitator] += 1;
-                }
-
-                // Facilitator load penalties and rewards
-                foreach (var kvp in facilitatorLoad)
-                {
-                    Facilitator facilitator = kvp.Key;
-                    int load = kvp.Value;
-
-                    if (facilitator.Name != "Dr. Tyler" && load > 3)
-                    {
-                        fitness -= 0.4;
-                    }
-                    else
-                    {
-                        if (load > 4)
-                        {
-                            fitness -= 0.5;
-                        }
-                    }
-                }
-                
-            schedule.Fitness = fitness;
-            totalFitness += (float)fitness;
-        }
-
-        float averageFitness = totalFitness / population.Count;
-        return averageFitness;
-    }
         static List<Schedule> SelectParents(List<Schedule> population, int tournamentSize)
         {
             List<Schedule> parents = new List<Schedule>();
