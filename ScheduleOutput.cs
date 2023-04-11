@@ -7,7 +7,7 @@ using System.Linq;
 public static class ScheduleOutput
 {
     private static DayOfWeek[] DayOrder = { DayOfWeek.Monday, DayOfWeek.Wednesday, DayOfWeek.Friday };
-    
+
     public static void PrintScheduleToFile(Schedule bestSchedule, int generation)
     {
         using (StreamWriter outputFile = new StreamWriter("output.txt", true))
@@ -31,7 +31,7 @@ public static class ScheduleOutput
     {
         using (StreamWriter outputFile = new StreamWriter("final_output.txt"))
         {
-            outputFile.WriteLine("Best Schedule:");
+            outputFile.WriteLine("Final Output:");
             outputFile.WriteLine("Fitness: " + bestSchedule.Fitness);
 
             var sortedAssignments = bestSchedule.Assignments.Where(a => DayOrder.Contains(a.Day)).OrderBy(a => Array.IndexOf(DayOrder, a.Day)).ThenBy(a => a.TimeSlot);

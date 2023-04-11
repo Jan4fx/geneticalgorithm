@@ -25,7 +25,11 @@ namespace GeneticAlgorithmSpaceUtilization
     {
         //static List<float> generationFitness = new List<float>();
         private const int PopulationSize = 1000;
-        private const int Generations = 200;
+        //populationsize 1000000
+        //Generation 18:
+        //Population: 2
+        //Best Fitness: 8.8
+        private const int Generations = 100;
         private const double MutationRate = 0.01;
         private const double FitnessImprovementThreshold = 0.01;
         static List<Activity> activities;
@@ -148,7 +152,7 @@ namespace GeneticAlgorithmSpaceUtilization
                     // Output offspring schedules, fitness, and generation number to the text file
                     Schedule bestSchedule = offspring.OrderByDescending(schedule => schedule.Fitness).First();
                     outputFile.WriteLine($"Generation {generation}:");
-                    
+                    outputFile.WriteLine($"Population: {population.Count}");
                     outputFile.WriteLine("Best Fitness: " + EvaluateFitness(offspring));
                     outputFile.WriteLine("Best Schedule:");
 
