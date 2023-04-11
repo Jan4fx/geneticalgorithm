@@ -32,10 +32,16 @@ namespace GeneticAlgorithmSpaceUtilization
         static void Main(string[] args)
         {
             File.WriteAllText("GenerationBestSchedule.txt", string.Empty);
+            File.WriteAllText("AllSchedules.txt", string.Empty);
             InitializeData();
             List<Schedule> population = GenerateInitialPopulation(PopulationSize);
             Tuple<Schedule, int> result = GeneticAlgorithm(population);
             ScheduleOutput.PrintFinalScheduleToFile(result.Item1, result.Item2);
+            Console.WriteLine();
+            string fileContent = File.ReadAllText("FinalSchedule.txt");
+            Console.WriteLine(fileContent);
+            Console.WriteLine("To View All Schedules Generated --> AllSchedules.txt");
+            Console.WriteLine("To View Each Generation's Best Schedule --> GenerationBestSchedule.txt");
         }
 
 
@@ -82,7 +88,7 @@ namespace GeneticAlgorithmSpaceUtilization
                     Assignment assignment = new Assignment();
                     assignment.Activity = activity;
                     assignment.Room = rooms[random.Next(rooms.Count)];
-                    assignment.TimeSlot = new TimeSpan(random.Next(10, 16), random.Next(60), 0);
+                    assignment.TimeSlot = new TimeSpan(random.Next(10, 16), 0, 0);
                     assignment.Facilitator = facilitators[random.Next(facilitators.Count)];
                     assignment.Day = activity.Day;
 
@@ -113,10 +119,10 @@ namespace GeneticAlgorithmSpaceUtilization
             using (StreamWriter outputFile = new StreamWriter("GenerationBestSchedule.txt", true))
             using (StreamWriter detailedOutputFile = new StreamWriter("AllSchedules.txt", true))
             {
+                Console.WriteLine("Running Generation 1 ...");
                 while (generation < Generations || (currentAverageFitness - prevAverageFitness) / prevAverageFitness > FitnessImprovementThreshold)
                 {
                     generation++;
-                    Console.WriteLine("Running Generation " + generation + " ...");
 
                     // Evaluate the fitness of the population
                     FitnessEvaluator.EvaluateFitness(population, facilitators);
@@ -141,6 +147,9 @@ namespace GeneticAlgorithmSpaceUtilization
                     else
                     {
                         break;
+                    }
+                    if(generation != 1){
+                        Console.WriteLine("Running Generation " + generation + " ...");
                     }
 
                     Schedule bestSchedule = offspring.First(schedule => schedule.Fitness == offspring.Max(s => s.Fitness));
@@ -317,8 +326,7 @@ namespace GeneticAlgorithmSpaceUtilization
                 if (new Random().NextDouble() < MutationRate)
                 {
                     schedule.Assignments[i].Room = rooms[new Random().Next(rooms.Count)];
-                    //new Random 50 == fifty minutes?
-                    schedule.Assignments[i].TimeSlot = new TimeSpan(new Random().Next(10, 16), new Random().Next(50), 0);
+                    schedule.Assignments[i].TimeSlot = new TimeSpan(new Random().Next(10, 16), 0, 0);
                     schedule.Assignments[i].Facilitator = facilitators[new Random().Next(facilitators.Count)];
                     schedule.Assignments[i].Day = allowedDays[new Random().Next(allowedDays.Length)];
                 }
