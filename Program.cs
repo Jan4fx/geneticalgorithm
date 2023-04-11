@@ -228,7 +228,6 @@ namespace GeneticAlgorithmSpaceUtilization
 
             return probabilities.Length - 1;
         }
-
         static List<Schedule> CrossoverAndMutation(List<Schedule> parents)
         {
             List<Schedule> offspring = new List<Schedule>();
@@ -240,18 +239,38 @@ namespace GeneticAlgorithmSpaceUtilization
                 Schedule parent1 = parents[i];
                 Schedule parent2 = parents[i + 1];
 
-                Schedule child1 = Crossover(parent1, parent2);
-                Schedule child2 = Crossover(parent2, parent1);
+                List<Schedule> children = new List<Schedule>();
 
-                Mutate(child1);
-                Mutate(child2);
+                for (int j = 0; j < 6; j++)
+                {
+                    Schedule child;
+                    if (j % 2 == 0)
+                    {
+                        child = Crossover(parent1, parent2);
+                    }
+                    else
+                    {
+                        child = Crossover(parent2, parent1);
+                    }
+                    Mutate(child);
+                    FitnessEvaluator.EvaluateFitness(new List<Schedule> { child }, facilitators);
+                    children.Add(child);
+                }
 
-                offspring.Add(child1);
-                offspring.Add(child2);
+                // Add children only if their fitness is higher than at least one of the parents
+                foreach (Schedule child in children)
+                {
+                    if (child.Fitness > parent1.Fitness || child.Fitness > parent2.Fitness)
+                    {
+                        offspring.Add(child);
+                    }
+                }
             }
 
             return offspring;
         }
+
+
 
         static Schedule Crossover(Schedule parent1, Schedule parent2)
         {
@@ -281,7 +300,8 @@ namespace GeneticAlgorithmSpaceUtilization
                 if (new Random().NextDouble() < MutationRate)
                 {
                     schedule.Assignments[i].Room = rooms[new Random().Next(rooms.Count)];
-                    schedule.Assignments[i].TimeSlot = new TimeSpan(new Random().Next(10, 16), new Random().Next(60), 0);
+                    //new Random 50 == fifty minutes?
+                    schedule.Assignments[i].TimeSlot = new TimeSpan(new Random().Next(10, 16), new Random().Next(50), 0);
                     schedule.Assignments[i].Facilitator = facilitators[new Random().Next(facilitators.Count)];
                     schedule.Assignments[i].Day = allowedDays[new Random().Next(allowedDays.Length)];
                 }
