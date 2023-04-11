@@ -95,7 +95,6 @@ namespace GeneticAlgorithmSpaceUtilization
             return population;
         }
 
-
         static Schedule GeneticAlgorithm(List<Schedule> population)
         {
             List<double> generationFitness = new List<double>();
@@ -108,49 +107,63 @@ namespace GeneticAlgorithmSpaceUtilization
                 throw new InvalidOperationException("The population is empty. Cannot run the genetic algorithm.");
             }
 
-            while (generation < Generations || (currentAverageFitness - prevAverageFitness) / prevAverageFitness > FitnessImprovementThreshold)
-            //while (generation < Generations && (currentAverageFitness - prevAverageFitness) / prevAverageFitness > FitnessImprovementThreshold)
+            DayOfWeek[] DayOrder = new DayOfWeek[] { DayOfWeek.Monday, DayOfWeek.Wednesday, DayOfWeek.Friday };
+
+            using (StreamWriter outputFile = new StreamWriter("output.txt", true))
             {
-                generation++;
-
-                // Evaluate the fitness of the population
-                EvaluateFitness(population);
-
-                // Compute the average fitness
-                prevAverageFitness = currentAverageFitness;
-                currentAverageFitness = population.Average(schedule => schedule.Fitness);
-
-                // Softmax normalization
-                var fitnessValues = population.Select(schedule => schedule.Fitness).ToArray();
-                //var softmaxProbabilities = SpecialFunctions.Softmax(fitnessValues);
-                double[] softmaxProbabilities = Softmax.Compute(fitnessValues);
-
-                // Select parents for reproduction based on their fitness
-                //List<Schedule> parents = SelectParents(population, softmaxProbabilities);
-
-                //Tournament Selection
-                List<Schedule> parents = SelectParents(population, 10); // Change 10 to your desired tournament size
-
-                // Perform crossover and mutation to create offspring
-                List<Schedule> offspring = CrossoverAndMutation(parents);
-
-                // Replace the old population with the new offspring if the offspring list is not empty
-                if (offspring.Count > 0)
+                while (generation < Generations || (currentAverageFitness - prevAverageFitness) / prevAverageFitness > FitnessImprovementThreshold)
                 {
-                    population = offspring;
-                }
-                else
-                {
-                    break;
-                }
-                //Schedule bestSchedule = GeneticAlgorithm(population);
-                //ScheduleOutput.PrintScheduleToFile(bestSchedule, generation);
+                    generation++;
 
+                    // Evaluate the fitness of the population
+                    EvaluateFitness(population);
+
+                    // Compute the average fitness
+                    prevAverageFitness = currentAverageFitness;
+                    currentAverageFitness = population.Average(schedule => schedule.Fitness);
+
+                    // Softmax normalization
+                    var fitnessValues = population.Select(schedule => schedule.Fitness).ToArray();
+                    double[] softmaxProbabilities = Softmax.Compute(fitnessValues);
+
+                    // Tournament Selection
+                    List<Schedule> parents = SelectParents(population, 10); // Change 10 to your desired tournament size
+
+                    // Perform crossover and mutation to create offspring
+                    List<Schedule> offspring = CrossoverAndMutation(parents);
+
+                    // Replace the old population with the new offspring if the offspring list is not empty
+                    if (offspring.Count > 0)
+                    {
+                        population = offspring;
+                    }
+                    else
+                    {
+                        break;
+                    }
+
+                    // Output offspring schedules, fitness, and generation number to the text file
+                    Schedule bestSchedule = offspring.OrderByDescending(schedule => schedule.Fitness).First();
+                    outputFile.WriteLine($"Generation {generation}:");
+                    outputFile.WriteLine("Best Schedule:");
+                    
+                    outputFile.WriteLine("Fitness: " + bestSchedule.Fitness);
+
+                    var sortedAssignments = bestSchedule.Assignments.Where(a => DayOrder.Contains(a.Day)).OrderBy(a => Array.IndexOf(DayOrder, a.Day)).ThenBy(a => a.TimeSlot);
+
+                    foreach (Assignment assignment in sortedAssignments)
+                    {
+                        outputFile.WriteLine($"Activity: {assignment.Activity.Name}, Day: {assignment.Day}, Time: {assignment.TimeSlot}, Room: {assignment.Room.Name}, Facilitator: {assignment.Facilitator.Name}");
+                    }
+
+                    //outputFile.WriteLine("-------------------------------------------------");
+                }
             }
 
             // Return the best schedule found
             return population.OrderByDescending(schedule => schedule.Fitness).First();
         }
+
 
 
     static void EvaluateFitness(List<Schedule> population)
