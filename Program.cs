@@ -5,6 +5,9 @@ using System.IO;
 using Data;
 using MathNet.Numerics;
 
+//Fix the scheduling, activity should be everyday once
+//Few more requirements for fitness testing
+
 namespace GeneticAlgorithmSpaceUtilization
 {
     public static class Softmax

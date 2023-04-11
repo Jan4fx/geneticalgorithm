@@ -2,15 +2,6 @@ using System.Collections.Generic;
 using Data;
 using GeneticAlgorithmSpaceUtilization;
 
-
-/*
-Fitness function:
-◦	If any facilitator scheduled for consecutive time slots: Same rules as for SLA 191 and SLA 101 in consecutive time slots—see below.
-
-Activity-specific adjustments:
-•	A section of SLA 191 and a section of SLA 101 are taught separated by 1 hour (e.g., 10 AM & 12:00 Noon): + 0.25
-•	A section of SLA 191 and a section of SLA 101 are taught in the same time slot: -0.25
-*/
 public class FitnessEvaluator
 {
         public static float EvaluateFitness(List<Schedule> population, List<Facilitator> facilitators)
@@ -136,6 +127,7 @@ public class FitnessEvaluator
                     }
 
                 // Check facilitator time conflicts and set a flag if there's at least one conflict for each facilitator
+                // Check to see time differences between facilitator assignments and locations
                 foreach (Facilitator facilitator in facilitators)
                 {
                     bool hasFacilitatorConflict = false;
@@ -145,14 +137,30 @@ public class FitnessEvaluator
                     {
                         for (int j = i + 1; j < facilitatorAssignments.Count; j++)
                         {
-                            if (facilitatorAssignments[i].Day == facilitatorAssignments[j].Day && Math.Abs((facilitatorAssignments[i].TimeSlot - facilitatorAssignments[j].TimeSlot).TotalMinutes) == 0)
+                            if (facilitatorAssignments[i].Day == facilitatorAssignments[j].Day)
                             {
-                                hasFacilitatorConflict = true;
-                                break;
+                                double timeDifference = Math.Abs((facilitatorAssignments[i].TimeSlot - facilitatorAssignments[j].TimeSlot).TotalMinutes);
+
+                                // Check if two assignments have the same start time (conflict)
+                                if (timeDifference == 0)
+                                {
+                                    hasFacilitatorConflict = true;
+                                }
+
+                                // Check if two assignments are separated by one hour on the same day
+                                if (timeDifference == 60)
+                                {
+                                    fitness += 0.5;
+                                    bool isAssignment1InSpecialRoom = facilitatorAssignments[i].Room.Name == "Roman" || facilitatorAssignments[i].Room.Name == "Beach";
+                                    bool isAssignment2InSpecialRoom = facilitatorAssignments[j].Room.Name == "Roman" || facilitatorAssignments[j].Room.Name == "Beach";
+
+                                    // Check if one of the two assignments is in room Roman or room Beach and the other is in neither
+                                    if (isAssignment1InSpecialRoom != isAssignment2InSpecialRoom)
+                                    {
+                                        fitness -= 0.4;
+                                    }
+                                }
                             }
-                        }
-                        if(hasFacilitatorConflict){
-                            break;
                         }
                     }
 
@@ -160,10 +168,12 @@ public class FitnessEvaluator
                     {
                         fitness -= 0.2;
                     }
-                    else{
+                    else
+                    {
                         fitness += 0.2;
                     }
                 }
+
 
 
                     // Facilitator load penalties and rewards
