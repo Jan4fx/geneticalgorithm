@@ -23,6 +23,7 @@ namespace GeneticAlgorithmSpaceUtilization
 
     public class Program
     {
+        //static List<float> generationFitness = new List<float>();
         private const int PopulationSize = 1000;
         private const int Generations = 200;
         private const double MutationRate = 0.01;
@@ -97,6 +98,7 @@ namespace GeneticAlgorithmSpaceUtilization
 
         static Schedule GeneticAlgorithm(List<Schedule> population)
         {
+            List<double> generationFitness = new List<double>();
             int generation = 0;
             double prevAverageFitness = 0;
             double currentAverageFitness = 0;
@@ -141,11 +143,8 @@ namespace GeneticAlgorithmSpaceUtilization
                 {
                     break;
                 }
-
-                // Find the best schedule in the current generation and print it to the file
-                Schedule bestSchedule = population.OrderByDescending(schedule => schedule.Fitness).First();
-                //PrintScheduleToFile(bestSchedule, generation); // Remove 'generation' variable from the method call
-                ScheduleOutput.PrintScheduleToFile(bestSchedule, generation);
+                //Schedule bestSchedule = GeneticAlgorithm(population);
+                //ScheduleOutput.PrintScheduleToFile(bestSchedule, generation);
 
             }
 

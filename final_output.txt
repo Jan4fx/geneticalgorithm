@@ -1,13 +1,13 @@
 Best Schedule:
-Fitness: 6.999999999999999
-Activity: SLA191A, Day: Monday, Time: 12:35:00, Room: Beach201, Facilitator: Glen
-Activity: SLA449, Day: Monday, Time: 14:35:00, Room: Beach201, Facilitator: Zeldin
-Activity: SLA191B, Day: Monday, Time: 15:42:00, Room: Roman201, Facilitator: Glen
-Activity: SLA100A, Day: Monday, Time: 15:56:00, Room: Frank119, Facilitator: Numen
-Activity: SLA291, Day: Wednesday, Time: 11:54:00, Room: Frank119, Facilitator: Singer
-Activity: SLA303, Day: Wednesday, Time: 12:07:00, Room: Frank119, Facilitator: Zeldin
-Activity: SLA304, Day: Wednesday, Time: 12:47:00, Room: Beach301, Facilitator: Dr. Tyler
-Activity: SLA394, Day: Wednesday, Time: 14:58:00, Room: Roman201, Facilitator: Singer
-Activity: SLA201, Day: Friday, Time: 10:54:00, Room: Loft206, Facilitator: Singer
-Activity: SLA100B, Day: Friday, Time: 11:08:00, Room: Frank119, Facilitator: Zeldin
-Activity: SLA451, Day: Friday, Time: 12:38:00, Room: Loft310, Facilitator: Banks
+Fitness: 8.5
+Activity: SLA449, Day: Monday, Time: 10:41:00, Room: Beach201, Facilitator: Singer
+Activity: SLA291, Day: Monday, Time: 11:16:00, Room: Beach201, Facilitator: Lock
+Activity: SLA394, Day: Monday, Time: 13:06:00, Room: Slater003, Facilitator: Zeldin
+Activity: SLA191B, Day: Wednesday, Time: 10:43:00, Room: Beach301, Facilitator: Lock
+Activity: SLA304, Day: Wednesday, Time: 12:22:00, Room: Beach201, Facilitator: Glen
+Activity: SLA191A, Day: Wednesday, Time: 13:45:00, Room: Loft206, Facilitator: Zeldin
+Activity: SLA451, Day: Wednesday, Time: 14:54:00, Room: Loft310, Facilitator: Shaw
+Activity: SLA201, Day: Wednesday, Time: 15:13:00, Room: Beach301, Facilitator: Banks
+Activity: SLA100B, Day: Friday, Time: 12:44:00, Room: Frank119, Facilitator: Banks
+Activity: SLA303, Day: Friday, Time: 12:53:00, Room: Beach301, Facilitator: Zeldin
+Activity: SLA100A, Day: Friday, Time: 14:44:00, Room: Roman201, Facilitator: Glen
