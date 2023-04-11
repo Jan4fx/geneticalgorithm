@@ -37,16 +37,19 @@ namespace GeneticAlgorithmSpaceUtilization
             List<Schedule> population = GenerateInitialPopulation(PopulationSize);
             Tuple<Schedule, int> result = GeneticAlgorithm(population);
             ScheduleOutput.PrintFinalScheduleToFile(result.Item1, result.Item2);
-            Console.WriteLine();
+            Console.WriteLine("-------------------------------------------------");
             string fileContent = File.ReadAllText("FinalSchedule.txt");
             Console.WriteLine(fileContent);
+            Console.WriteLine("-------------------------------------------------");
             Console.WriteLine("To View All Schedules Generated --> AllSchedules.txt");
             Console.WriteLine("To View Each Generation's Best Schedule --> GenerationBestSchedule.txt");
+            Console.WriteLine("-------------------------------------------------");
         }
 
 
         static void InitializeData()
         {
+            Console.WriteLine("Initializing Data ...");
             // Initialize example activities
             activities = ActivitiesData.GetActivities();
 
@@ -77,6 +80,7 @@ namespace GeneticAlgorithmSpaceUtilization
 
         static List<Schedule> GenerateInitialPopulation(int size)
         {
+            Console.WriteLine("Generating Generation 0 ...");
             List<Schedule> population = new List<Schedule>();
 
             for (int i = 0; i < size; i++)
