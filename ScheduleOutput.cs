@@ -27,12 +27,13 @@ public static class ScheduleOutput
         }
     }
 
-    public static void PrintFinalScheduleToFile(Schedule bestSchedule)
+    public static void PrintFinalScheduleToFile(Schedule bestSchedule, int generation)
     {
         using (StreamWriter outputFile = new StreamWriter("FinalSchedule.txt"))
         {
+            generation -= 1;
             outputFile.WriteLine("Final Output:");
-            //outputFile.WriteLine("Generation " + generation);
+            outputFile.WriteLine("Generation " + generation);
             outputFile.WriteLine("Fitness: " + bestSchedule.Fitness);
 
             var sortedAssignments = bestSchedule.Assignments.Where(a => DayOrder.Contains(a.Day)).OrderBy(a => Array.IndexOf(DayOrder, a.Day)).ThenBy(a => a.TimeSlot);

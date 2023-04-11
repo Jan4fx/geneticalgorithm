@@ -34,9 +34,10 @@ namespace GeneticAlgorithmSpaceUtilization
             File.WriteAllText("GenerationBestSchedule.txt", string.Empty);
             InitializeData();
             List<Schedule> population = GenerateInitialPopulation(PopulationSize);
-            Schedule bestSchedule = GeneticAlgorithm(population);
-            ScheduleOutput.PrintFinalScheduleToFile(bestSchedule);
+            Tuple<Schedule, int> result = GeneticAlgorithm(population);
+            ScheduleOutput.PrintFinalScheduleToFile(result.Item1, result.Item2);
         }
+
 
         static void InitializeData()
         {
@@ -94,7 +95,9 @@ namespace GeneticAlgorithmSpaceUtilization
             return population;
         }
 
-        static Schedule GeneticAlgorithm(List<Schedule> population)
+        //static Schedule GeneticAlgorithm(List<Schedule> population)
+        static Tuple<Schedule, int> GeneticAlgorithm(List<Schedule> population)
+
         {
             List<double> generationFitness = new List<double>();
             int generation = 0;
@@ -176,7 +179,9 @@ namespace GeneticAlgorithmSpaceUtilization
             }
 
             // Return the best schedule found
-            return population.OrderByDescending(schedule => schedule.Fitness).First();
+            //return population.OrderByDescending(schedule => schedule.Fitness).First();
+            return new Tuple<Schedule, int>(population.OrderByDescending(schedule => schedule.Fitness).First(), generation);
+
             }
 
         static List<Schedule> SelectParents(List<Schedule> population, int tournamentSize)
