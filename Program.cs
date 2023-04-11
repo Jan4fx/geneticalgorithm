@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.IO;
 using Data;
-using MathNet.Numerics; 
+using MathNet.Numerics;
 
-//Make two offspring instead of 1
-//Questions to ask, are activities scheduled everyday of the three days
 namespace GeneticAlgorithmSpaceUtilization
 {
     public static class Softmax
@@ -23,7 +21,6 @@ namespace GeneticAlgorithmSpaceUtilization
 
     public class Program
     {
-        //static List<float> generationFitness = new List<float>();
         private const int PopulationSize = 1000;
         private const int Generations = 100;
         private const double MutationRate = 0.01;
@@ -38,9 +35,7 @@ namespace GeneticAlgorithmSpaceUtilization
             InitializeData();
             List<Schedule> population = GenerateInitialPopulation(PopulationSize);
             Schedule bestSchedule = GeneticAlgorithm(population);
-            //PrintFinalScheduleToFile(bestSchedule);
             ScheduleOutput.PrintFinalScheduleToFile(bestSchedule);
-
         }
 
         static void InitializeData()
@@ -56,18 +51,22 @@ namespace GeneticAlgorithmSpaceUtilization
 
             // Restrict activity start times
             List<int> allowedStartHours = new List<int> { 10, 11, 12, 13, 14, 15 };
-            foreach (Activity activity in activities)
-            {
-                activity.StartTime = new TimeSpan(allowedStartHours[random.Next(allowedStartHours.Count)], 0, 0);
-            }
             DayOfWeek[] allowedDays = new DayOfWeek[] { DayOfWeek.Monday, DayOfWeek.Wednesday, DayOfWeek.Friday };
+
+            // Create activity instances for each day
+            List<Activity> expandedActivities = new List<Activity>();
             foreach (Activity activity in activities)
             {
-                activity.StartTime = new TimeSpan(allowedStartHours[random.Next(allowedStartHours.Count)], 0, 0);
-                activity.Day = allowedDays[random.Next(allowedDays.Length)];
-    }
+                foreach (DayOfWeek day in allowedDays)
+                {
+                    Activity newActivity = activity.Clone();
+                    newActivity.StartTime = new TimeSpan(allowedStartHours[random.Next(allowedStartHours.Count)], 0, 0);
+                    newActivity.Day = day;
+                    expandedActivities.Add(newActivity);
+                }
+            }
+            activities = expandedActivities;
         }
-
 
         static List<Schedule> GenerateInitialPopulation(int size)
         {
@@ -241,7 +240,7 @@ namespace GeneticAlgorithmSpaceUtilization
 
                 List<Schedule> children = new List<Schedule>();
 
-                for (int j = 0; j < 6; j++)
+                for (int j = 0; j < 5; j++)
                 {
                     Schedule child;
                     if (j % 2 == 0)

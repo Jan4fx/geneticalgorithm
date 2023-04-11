@@ -10,15 +10,44 @@ namespace Data
         public List<Other> Other { get; set; } = new List<Other>();
         public int ExpectedEnrollment { get; set; }
         public DayOfWeek Day { get; set; }
+
+        public Activity Clone()
+        {
+            return new Activity
+            {
+                Name = this.Name,
+                StartTime = this.StartTime,
+                Preferred = this.Preferred.Select(p => p.Clone()).ToList(),
+                Other = this.Other.Select(o => o.Clone()).ToList(),
+                ExpectedEnrollment = this.ExpectedEnrollment,
+                Day = this.Day,
+            };
+        }
     }
     public class Preferred
     {
         public string Name { get; set; }
+
+        public Preferred Clone()
+        {
+            return new Preferred
+            {
+                Name = this.Name,
+            };
+        }
     }
 
     public class Other
     {
         public string Name { get; set; }
+
+        public Other Clone()
+        {
+            return new Other
+            {
+                Name = this.Name,
+            };
+        }
     }
     public static class ActivitiesData
     {
