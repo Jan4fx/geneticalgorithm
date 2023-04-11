@@ -119,8 +119,11 @@ namespace GeneticAlgorithmSpaceUtilization
                     EvaluateFitness(population);
 
                     // Compute the average fitness
+                    //currentAverageFitness = population.Average(schedule => schedule.Fitness);
+
                     prevAverageFitness = currentAverageFitness;
-                    currentAverageFitness = population.Average(schedule => schedule.Fitness);
+                    ///Figure out if averaging
+                    currentAverageFitness = EvaluateFitness(population);
 
                     // Softmax normalization
                     var fitnessValues = population.Select(schedule => schedule.Fitness).ToArray();
@@ -145,9 +148,9 @@ namespace GeneticAlgorithmSpaceUtilization
                     // Output offspring schedules, fitness, and generation number to the text file
                     Schedule bestSchedule = offspring.OrderByDescending(schedule => schedule.Fitness).First();
                     outputFile.WriteLine($"Generation {generation}:");
-                    outputFile.WriteLine("Best Schedule:");
                     
-                    outputFile.WriteLine("Fitness: " + bestSchedule.Fitness);
+                    outputFile.WriteLine("Best Fitness: " + EvaluateFitness(offspring));
+                    outputFile.WriteLine("Best Schedule:");
 
                     var sortedAssignments = bestSchedule.Assignments.Where(a => DayOrder.Contains(a.Day)).OrderBy(a => Array.IndexOf(DayOrder, a.Day)).ThenBy(a => a.TimeSlot);
 
@@ -156,7 +159,7 @@ namespace GeneticAlgorithmSpaceUtilization
                         outputFile.WriteLine($"Activity: {assignment.Activity.Name}, Day: {assignment.Day}, Time: {assignment.TimeSlot}, Room: {assignment.Room.Name}, Facilitator: {assignment.Facilitator.Name}");
                     }
 
-                    //outputFile.WriteLine("-------------------------------------------------");
+                    outputFile.WriteLine("-------------------------------------------------");
                 }
             }
 
@@ -164,13 +167,13 @@ namespace GeneticAlgorithmSpaceUtilization
             return population.OrderByDescending(schedule => schedule.Fitness).First();
         }
 
+    static float EvaluateFitness(List<Schedule> population)
+    {
+        float totalFitness = 0;
 
-
-    static void EvaluateFitness(List<Schedule> population)
+        foreach (Schedule schedule in population)
         {
-            foreach (Schedule schedule in population)
-            {
-                double fitness = 0;
+                            double fitness = 0;
 
                 // Count the facilitator's load
                 Dictionary<Facilitator, int> facilitatorLoad = new Dictionary<Facilitator, int>();
@@ -247,9 +250,14 @@ namespace GeneticAlgorithmSpaceUtilization
                         }
                     }
                 }
-                schedule.Fitness = fitness;
-            }
+                
+            schedule.Fitness = fitness;
+            totalFitness += (float)fitness;
         }
+
+        float averageFitness = totalFitness / population.Count;
+        return averageFitness;
+    }
         static List<Schedule> SelectParents(List<Schedule> population, int tournamentSize)
         {
             List<Schedule> parents = new List<Schedule>();

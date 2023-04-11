@@ -7,7 +7,7 @@ using System.Linq;
 public static class ScheduleOutput
 {
     private static DayOfWeek[] DayOrder = { DayOfWeek.Monday, DayOfWeek.Wednesday, DayOfWeek.Friday };
-
+    
     public static void PrintScheduleToFile(Schedule bestSchedule, int generation)
     {
         using (StreamWriter outputFile = new StreamWriter("output.txt", true))
