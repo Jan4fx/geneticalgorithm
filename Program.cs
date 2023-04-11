@@ -145,7 +145,8 @@ namespace GeneticAlgorithmSpaceUtilization
                     }
 
                     // Output offspring schedules, fitness, and generation number to the text file
-                    Schedule bestSchedule = offspring.OrderByDescending(schedule => schedule.Fitness).First();
+                    Schedule bestSchedule = offspring.First(schedule => schedule.Fitness == offspring.Max(s => s.Fitness));
+
                     outputFile.WriteLine($"Generation {generation}:");
                     outputFile.WriteLine($"Population: {population.Count}");
                     outputFile.WriteLine("Best Fitness: " + FitnessEvaluator.EvaluateFitness(offspring, facilitators));
