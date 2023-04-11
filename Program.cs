@@ -95,7 +95,7 @@ namespace GeneticAlgorithmSpaceUtilization
                     Assignment assignment = new Assignment();
                     assignment.Activity = activity;
                     assignment.Room = rooms[random.Next(rooms.Count)];
-                    assignment.TimeSlot = new TimeSpan(random.Next(10, 16), 0, 0);
+                    assignment.TimeSlot = activity.StartTime;
                     assignment.Facilitator = facilitators[random.Next(facilitators.Count)];
                     assignment.Day = activity.Day;
 
@@ -107,6 +107,7 @@ namespace GeneticAlgorithmSpaceUtilization
 
             return population;
         }
+
 
         //static Schedule GeneticAlgorithm(List<Schedule> population)
         static Tuple<Schedule, int> GeneticAlgorithm(List<Schedule> population)
