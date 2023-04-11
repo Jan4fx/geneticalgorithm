@@ -31,7 +31,7 @@ namespace GeneticAlgorithmSpaceUtilization
         static Random random = new Random();
         static void Main(string[] args)
         {
-            File.WriteAllText("output.txt", string.Empty);
+            File.WriteAllText("GenerationBestSchedule.txt", string.Empty);
             InitializeData();
             List<Schedule> population = GenerateInitialPopulation(PopulationSize);
             Schedule bestSchedule = GeneticAlgorithm(population);
@@ -100,7 +100,6 @@ namespace GeneticAlgorithmSpaceUtilization
             int generation = 0;
             double prevAverageFitness = 0;
             double currentAverageFitness = 0;
-
             if (population.Count == 0)
             {
                 throw new InvalidOperationException("The population is empty. Cannot run the genetic algorithm.");
@@ -108,20 +107,18 @@ namespace GeneticAlgorithmSpaceUtilization
 
             DayOfWeek[] DayOrder = new DayOfWeek[] { DayOfWeek.Monday, DayOfWeek.Wednesday, DayOfWeek.Friday };
 
-            using (StreamWriter outputFile = new StreamWriter("output.txt", true))
+            using (StreamWriter outputFile = new StreamWriter("GenerationBestSchedule.txt", true))
+            using (StreamWriter detailedOutputFile = new StreamWriter("AllSchedules.txt", true))
             {
                 while (generation < Generations || (currentAverageFitness - prevAverageFitness) / prevAverageFitness > FitnessImprovementThreshold)
                 {
                     generation++;
+                    Console.WriteLine("Running Generation " + generation + " ...");
 
                     // Evaluate the fitness of the population
                     FitnessEvaluator.EvaluateFitness(population, facilitators);
 
-                    // Compute the average fitness
-                    //currentAverageFitness = population.Average(schedule => schedule.Fitness);
-
                     prevAverageFitness = currentAverageFitness;
-                    ///Figure out if averaging
                     currentAverageFitness = FitnessEvaluator.EvaluateFitness(population, facilitators);
 
                     // Softmax normalization
@@ -129,12 +126,11 @@ namespace GeneticAlgorithmSpaceUtilization
                     double[] softmaxProbabilities = Softmax.Compute(fitnessValues);
 
                     // Tournament Selection
-                    List<Schedule> parents = SelectParents(population, 10); // Change 10 to your desired tournament size
+                    List<Schedule> parents = SelectParents(population, 10);
 
                     // Perform crossover and mutation to create offspring
                     List<Schedule> offspring = CrossoverAndMutation(parents);
 
-                    // Replace the old population with the new offspring if the offspring list is not empty
                     if (offspring.Count > 0)
                     {
                         population = offspring;
@@ -144,7 +140,6 @@ namespace GeneticAlgorithmSpaceUtilization
                         break;
                     }
 
-                    // Output offspring schedules, fitness, and generation number to the text file
                     Schedule bestSchedule = offspring.First(schedule => schedule.Fitness == offspring.Max(s => s.Fitness));
 
                     outputFile.WriteLine($"Generation {generation}:");
@@ -160,12 +155,29 @@ namespace GeneticAlgorithmSpaceUtilization
                     }
 
                     outputFile.WriteLine("-------------------------------------------------");
+
+                    // Write detailed offspring information to DetailedGenerationInfo.txt
+                    detailedOutputFile.WriteLine($"Generation {generation}:");
+                    foreach (Schedule child in offspring)
+                    {
+                        detailedOutputFile.WriteLine($"Offspring Fitness: {child.Fitness}");
+                        detailedOutputFile.WriteLine("Offspring Schedule:");
+
+                        var offspringAssignments = child.Assignments.Where(a => DayOrder.Contains(a.Day)).OrderBy(a => Array.IndexOf(DayOrder, a.Day)).ThenBy(a => a.TimeSlot);
+
+                        foreach (Assignment assignment in offspringAssignments)
+                        {
+                            detailedOutputFile.WriteLine($"Activity: {assignment.Activity.Name}, Day: {assignment.Day}, Time: {assignment.TimeSlot}, Room: {assignment.Room.Name}, Facilitator: {assignment.Facilitator.Name}");
+                        }
+
+                        detailedOutputFile.WriteLine("-------------------------------------------------");
+                    }
                 }
             }
 
             // Return the best schedule found
             return population.OrderByDescending(schedule => schedule.Fitness).First();
-        }
+            }
 
         static List<Schedule> SelectParents(List<Schedule> population, int tournamentSize)
         {
