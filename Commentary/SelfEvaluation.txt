@@ -1,0 +1,33 @@
+i)      What were the challenges in writing the program? Or did it seem to go smoothly from the beginning?
+ii)    What do you think of the schedule your program produced? Does it have anything that still looks odd or out of place?
+iii)  How would you improve the program, or change the fitness function?
+iv)   Anything else you feel like discussing, asking about, bragging about, etc.
+
+The main hurdle in writing this genetic algorithm was using C#, besides my capstone project that I am currently working on I have 
+used C# quite little since my senior year of highschool, so I challenged myself to use this language in creating my program and it 
+really paid off. I feel way more familiar with the language now and learned how to make a genetic algorithm along with it. Some other 
+issues I faced were trying to understand what was being asked for, there were a lot of specifications that were asked for that I had to 
+wrap my head around, but after a few read throughs I got the general gist of it all and would implement the criteria one by one. Learning 
+how to fine tune the mutation rate initial and succession populations, along with fitness calculations were also an obstacle but one I was 
+able to best and learn from. 
+
+My final schedule is pretty worked out and does not usually ever have anything out of place, but with random schedules generated thousands 
+of times it is interesting to see how different and varied a high fitness schedule can oppose in aesthetics to a dotnet run a few minutes 
+prior. I would say that it was important for me to run and test the genetic algorithm several dozen times, fine tuning the algorithm for 
+efficiency as well as picking up on patterns for appearances that did not look quite right. For example, I was getting a super high fitness 
+score for awhile and it usually coincided with lots of conflicted facilitator assignments, looking deeper I found that the conflict penalty 
+was only being applied to one facilitator once in the whole select schedule when it needed to be a few brackets up applied to all. 
+
+There were several changes I made to the program over time to enhance the overall algorithm. I changed the reproduction rate, restricted 
+what child schedules got to exist and made a method for handling too high of a population which could theoretically go until your computer 
+freezes by automatically restarting the program and halving the reproduction rate when necessary. These implementations I thought necessary
+after my population halved roughly each generation and thus would only get five or eight generations deep due to a low population with 
+little change and an unmet threshold due to little if any genetic diversity. After these implementations the fitness of final schedules 
+went up about 25% and unfortunately compile time went up 50% and with this I had to take out the raw data I spent time implementing to a 
+txt of each and every generated schedule and only save information for previous generation current generation along with best/average 
+fitness of every generation.
+
+I spent more time than I felt was needed because I really wanted to fine tune my algorithm, make it look pretty and give a near best answer 
+each run. I compartmentalized much of my code, left detailed comments and analyzations of what certain lines succeeded or failed at. Very 
+satisfied with the safety rail because with how many different ways a genetic algorithm could go the program could work one-hundred times 
+for me and then never finish when given to the grader due to a low but still possible chance of exponentials.
