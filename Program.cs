@@ -37,19 +37,19 @@ namespace GeneticAlgorithmSpaceUtilization
 
         static void Main(string[] args)
         {
-            File.WriteAllText("GenerationBestSchedule.txt", string.Empty);
-            File.WriteAllText("AllSchedules.txt", string.Empty);
+            File.WriteAllText("SavedData/GenerationBestSchedule.txt", string.Empty);
+            File.WriteAllText("SavedData/AllSchedules.txt", string.Empty);
             InitializeData();
             List<Schedule> population = GenerateInitialPopulation(PopulationSize);
             Tuple<Schedule, int> result = GeneticAlgorithm(population);
             ScheduleOutput.PrintFinalScheduleToFile(result.Item1, result.Item2);
             Console.WriteLine("---------------------------------------------------------------------------------");
-            string fileContent = File.ReadAllText("FinalSchedule.txt");
+            string fileContent = File.ReadAllText("SavedData/FinalSchedule.txt");
             Console.WriteLine(fileContent);
             Console.WriteLine("---------------------------------------------------------------------------------");
             //Hurts Performance
             //Console.WriteLine("To View All Schedules Generated --> AllSchedules.txt");
-            Console.WriteLine("To View Each Generation's Best Schedule --> GenerationBestSchedule.txt");
+            Console.WriteLine("To View Each Generation's Best Schedule --> SavedData/GenerationBestSchedule.txt");
             Console.WriteLine("---------------------------------------------------------------------------------");
         }
 
@@ -126,8 +126,8 @@ namespace GeneticAlgorithmSpaceUtilization
 
             DayOfWeek[] DayOrder = new DayOfWeek[] { DayOfWeek.Monday, DayOfWeek.Wednesday, DayOfWeek.Friday };
 
-            using (StreamWriter outputFile = new StreamWriter("GenerationBestSchedule.txt", true))
-            //using (StreamWriter detailedOutputFile = new StreamWriter("AllSchedules.txt", true))
+            using (StreamWriter outputFile = new StreamWriter("SavedData/GenerationBestSchedule.txt", true))
+            //using (StreamWriter detailedOutputFile = new StreamWriter("SavedData/AllSchedules.txt", true))
             {
                 Console.WriteLine("Running Generation 1 ...");
                 while (generation < Generations || (currentAverageFitness - prevAverageFitness) / prevAverageFitness > FitnessImprovementThreshold)

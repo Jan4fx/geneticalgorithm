@@ -72,8 +72,8 @@ public class FitnessEvaluator
                                         {
                                             fitness += 0.5;
 
-                                            bool isAssignmentInRomanOrBeach = (assignment.Room.Name == "Roman" || assignment.Room.Name == "Beach");
-                                            bool isOtherAssignmentInRomanOrBeach = (otherAssignment.Room.Name == "Roman" || otherAssignment.Room.Name == "Beach");
+                                            bool isAssignmentInRomanOrBeach = (assignment.Room.Name == "Roman201" || assignment.Room.Name == "Roman216" || assignment.Room.Name == "Beach201" || assignment.Room.Name == "Beach301");
+                                            bool isOtherAssignmentInRomanOrBeach = (otherAssignment.Room.Name == "Roman201" || otherAssignment.Room.Name == "Roman216" || otherAssignment.Room.Name == "Beach201" || otherAssignment.Room.Name == "Beach301");
 
                                             // Check if either of the assignments is in Roman or Beach, and the other isn't
                                             if (isAssignmentInRomanOrBeach != isOtherAssignmentInRomanOrBeach)
@@ -152,8 +152,8 @@ public class FitnessEvaluator
                                 if (timeDifference == 60)
                                 {
                                     fitness += 0.5;
-                                    bool isAssignment1InSpecialRoom = facilitatorAssignments[i].Room.Name == "Roman" || facilitatorAssignments[i].Room.Name == "Beach";
-                                    bool isAssignment2InSpecialRoom = facilitatorAssignments[j].Room.Name == "Roman" || facilitatorAssignments[j].Room.Name == "Beach";
+                                    bool isAssignment1InSpecialRoom = facilitatorAssignments[i].Room.Name == "Roman201" || facilitatorAssignments[i].Room.Name == "Roman216" || facilitatorAssignments[i].Room.Name == "Beach201" || facilitatorAssignments[i].Room.Name == "Beach301";
+                                    bool isAssignment2InSpecialRoom = facilitatorAssignments[j].Room.Name == "Roman201" || facilitatorAssignments[j].Room.Name == "Roman216" || facilitatorAssignments[j].Room.Name == "Beach201" || facilitatorAssignments[j].Room.Name == "Beach301";
 
                                     // Check if one of the two assignments is in room Roman or room Beach and the other is in neither
                                     if (isAssignment1InSpecialRoom != isAssignment2InSpecialRoom)
