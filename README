@@ -7,7 +7,7 @@ dotnet run --project YourProjectName.csproj
 dotnet run
 -------Summary----------
 Genetic Algorithm to find the best schedule for facilitators for a client agency
--------Commentary Folder--------
+-------ProjectReport Folder--------
 Here I do my self evaluation
 -------SavedData Folder-----------
 Saved generations data from the latest run
