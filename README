@@ -1,12 +1,13 @@
-To Set Up the Project
-cd into folder
+------Project Setup---------
+cd into project
 dotnet new console
 dotnet build
 dotnet add package MathNet.Numerics
 dotnet run --project YourProjectName.csproj
 dotnet run
-
-        //populationsize 1000000
-        //Generation 18:
-        //Population: 2
-        //Best Fitness: 8.8
+-------Summary----------
+Genetic Algorithm to find the best schedule for facilitators for a client agency
+-------Commentary Folder--------
+Here I do my self evaluation
+-------SavedData Folder-----------
+Saved generations data from the latest run
