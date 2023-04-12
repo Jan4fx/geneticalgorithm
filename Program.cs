@@ -5,9 +5,6 @@ using System.IO;
 using Data;
 using MathNet.Numerics;
 
-//Fix the scheduling, activity should be everyday once
-//Few more requirements for fitness testing
-
 namespace GeneticAlgorithmSpaceUtilization
 {
     public static class Softmax
@@ -26,12 +23,18 @@ namespace GeneticAlgorithmSpaceUtilization
     {
         private const int PopulationSize = 1000;
         private const int Generations = 100;
-        private const double MutationRate = 0.01;
+        private const double MutationRate = 0.0000000000000001; //more fitness
+        //private const double MutationRate = 10; //less fitness
         private const double FitnessImprovementThreshold = 0.01;
         static List<Activity> activities;
         static List<Room> rooms;
         static List<Facilitator> facilitators;
         static Random random = new Random();
+        //how many possible children that parents can create
+        //for child to be passed they need to have a higher fitness than 
+        //one of the two parents
+        private static int reproduction = 24;
+
         static void Main(string[] args)
         {
             File.WriteAllText("GenerationBestSchedule.txt", string.Empty);
@@ -40,13 +43,14 @@ namespace GeneticAlgorithmSpaceUtilization
             List<Schedule> population = GenerateInitialPopulation(PopulationSize);
             Tuple<Schedule, int> result = GeneticAlgorithm(population);
             ScheduleOutput.PrintFinalScheduleToFile(result.Item1, result.Item2);
-            Console.WriteLine("-------------------------------------------------");
+            Console.WriteLine("---------------------------------------------------------------------------------");
             string fileContent = File.ReadAllText("FinalSchedule.txt");
             Console.WriteLine(fileContent);
-            Console.WriteLine("-------------------------------------------------");
-            Console.WriteLine("To View All Schedules Generated --> AllSchedules.txt");
+            Console.WriteLine("---------------------------------------------------------------------------------");
+            //Hurts Performance
+            //Console.WriteLine("To View All Schedules Generated --> AllSchedules.txt");
             Console.WriteLine("To View Each Generation's Best Schedule --> GenerationBestSchedule.txt");
-            Console.WriteLine("-------------------------------------------------");
+            Console.WriteLine("---------------------------------------------------------------------------------");
         }
 
 
@@ -108,8 +112,6 @@ namespace GeneticAlgorithmSpaceUtilization
             return population;
         }
 
-
-        //static Schedule GeneticAlgorithm(List<Schedule> population)
         static Tuple<Schedule, int> GeneticAlgorithm(List<Schedule> population)
 
         {
@@ -125,7 +127,7 @@ namespace GeneticAlgorithmSpaceUtilization
             DayOfWeek[] DayOrder = new DayOfWeek[] { DayOfWeek.Monday, DayOfWeek.Wednesday, DayOfWeek.Friday };
 
             using (StreamWriter outputFile = new StreamWriter("GenerationBestSchedule.txt", true))
-            using (StreamWriter detailedOutputFile = new StreamWriter("AllSchedules.txt", true))
+            //using (StreamWriter detailedOutputFile = new StreamWriter("AllSchedules.txt", true))
             {
                 Console.WriteLine("Running Generation 1 ...");
                 while (generation < Generations || (currentAverageFitness - prevAverageFitness) / prevAverageFitness > FitnessImprovementThreshold)
@@ -137,6 +139,8 @@ namespace GeneticAlgorithmSpaceUtilization
 
                     prevAverageFitness = currentAverageFitness;
                     currentAverageFitness = FitnessEvaluator.EvaluateFitness(population, facilitators);
+                    double outputAverageFitness = Math.Round(currentAverageFitness, 2);
+                    Console.WriteLine("Average Fitness is " + outputAverageFitness);
 
                     // Softmax normalization
                     var fitnessValues = population.Select(schedule => schedule.Fitness).ToArray();
@@ -159,6 +163,16 @@ namespace GeneticAlgorithmSpaceUtilization
                     if(generation != 1){
                         Console.WriteLine("Running Generation " + generation + " ...");
                     }
+                    Console.WriteLine("Population Count is " + population.Count);
+                    if (population.Count > 25000)
+                    {
+                        Console.WriteLine("!!!Sorry population size has gotten too big!!!");
+                        Console.WriteLine("----->Applying smaller reproduction restarting and trying again...");
+                        reproduction /= 2;
+                        InitializeData();
+                        List<Schedule> newPopulation = GenerateInitialPopulation(PopulationSize);
+                        return GeneticAlgorithm(newPopulation);
+                    }
 
                     Schedule bestSchedule = offspring.First(schedule => schedule.Fitness == offspring.Max(s => s.Fitness));
 
@@ -177,6 +191,9 @@ namespace GeneticAlgorithmSpaceUtilization
                     outputFile.WriteLine("-------------------------------------------------");
 
                     // Write detailed offspring information to DetailedGenerationInfo.txt
+                    //(Hurts performance)
+
+                    /*
                     detailedOutputFile.WriteLine($"Generation {generation}:");
                     foreach (Schedule child in offspring)
                     {
@@ -192,6 +209,7 @@ namespace GeneticAlgorithmSpaceUtilization
 
                         detailedOutputFile.WriteLine("-------------------------------------------------");
                     }
+                    */
                 }
             }
 
@@ -274,8 +292,8 @@ namespace GeneticAlgorithmSpaceUtilization
                 Schedule parent2 = parents[i + 1];
 
                 List<Schedule> children = new List<Schedule>();
-
-                for (int j = 0; j < 5; j++)
+                //change j less than operator for more possible offspring (at your own risk could get astronomically big)
+                for (int j = 0; j < reproduction; j++)
                 {
                     Schedule child;
                     if (j % 2 == 0)

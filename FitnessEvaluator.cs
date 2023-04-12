@@ -130,7 +130,7 @@ public class FitnessEvaluator
                 // Check to see time differences between facilitator assignments and locations
                 foreach (Facilitator facilitator in facilitators)
                 {
-                    bool hasFacilitatorConflict = false;
+                    bool noConflicts = false;
                     var facilitatorAssignments = schedule.Assignments.Where(a => a.Facilitator == facilitator).ToList();
 
                     for (int i = 0; i < facilitatorAssignments.Count; i++)
@@ -144,7 +144,8 @@ public class FitnessEvaluator
                                 // Check if two assignments have the same start time (conflict)
                                 if (timeDifference == 0)
                                 {
-                                    hasFacilitatorConflict = true;
+                                    noConflicts = false;
+                                    fitness -= 2;
                                 }
 
                                 // Check if two assignments are separated by one hour on the same day
@@ -163,12 +164,7 @@ public class FitnessEvaluator
                             }
                         }
                     }
-
-                    if (hasFacilitatorConflict)
-                    {
-                        fitness -= 0.2;
-                    }
-                    else
+                    if (noConflicts)
                     {
                         fitness += 0.2;
                     }
