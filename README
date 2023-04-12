@@ -3,6 +3,7 @@ cd into folder
 dotnet new console
 dotnet build
 dotnet add package MathNet.Numerics
+dotnet run --project YourProjectName.csproj
 dotnet run
 
         //populationsize 1000000
