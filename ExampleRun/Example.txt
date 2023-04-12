@@ -1,3 +1,50 @@
+$ dotnet run
+Initializing Data ...
+Generating Generation 0 ...
+Running Generation 1 ...
+Average Fitness is -2.61
+Population Count is 2441
+Average Fitness is 4.16
+Running Generation 2 ...
+Population Count is 3594
+Average Fitness is 8.17
+Running Generation 3 ...
+Population Count is 3694
+Average Fitness is 11.25
+Running Generation 4 ...
+Population Count is 2997
+Average Fitness is 13.76
+Running Generation 5 ...
+Population Count is 1956
+Average Fitness is 15.96
+Running Generation 6 ...
+Population Count is 1187
+Average Fitness is 17.99
+Running Generation 7 ...
+Population Count is 595
+Average Fitness is 19.91
+Running Generation 8 ...
+Population Count is 460
+Average Fitness is 21.61
+Running Generation 9 ...
+Population Count is 359
+Average Fitness is 23.13
+Running Generation 10 ...
+Population Count is 376
+Average Fitness is 24.44
+Running Generation 11 ...
+Population Count is 337
+Average Fitness is 25.39
+Running Generation 12 ...
+Population Count is 349
+Average Fitness is 25.94
+Running Generation 13 ...
+Population Count is 451
+Average Fitness is 26.43
+Running Generation 14 ...
+Population Count is 541
+Average Fitness is 27.13
+---------------------------------------------------------------------------------
 Final Output:
 Generation 14
 Best Fitness: 27.30000000000001
@@ -34,3 +81,7 @@ Activity: SLA100A, Day: Friday, Time: 14:00:00, Room: Loft206, Facilitator: Rich
 Activity: SLA100B, Day: Friday, Time: 14:00:00, Room: Roman201, Facilitator: Glen
 Activity: SLA303, Day: Friday, Time: 15:00:00, Room: Beach301, Facilitator: Glen
 Activity: SLA451, Day: Friday, Time: 15:00:00, Room: Loft310, Facilitator: Richards
+
+---------------------------------------------------------------------------------
+To View Each Generation's Best Schedule --> SavedData/GenerationBestSchedule.txt
+---------------------------------------------------------------------------------

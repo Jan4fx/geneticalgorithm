@@ -1,608 +1,532 @@
 Generation 1:
-Population: 2267
-Best Fitness: 4.1723437
+Population: 2441
+Best Fitness: 4.1631722
 Best Schedule:
-Activity: SLA291, Day: Monday, Time: 10:00:00, Room: Slater003, Facilitator: Singer
-Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Beach301, Facilitator: Glen
-Activity: SLA191B, Day: Monday, Time: 11:00:00, Room: Loft310, Facilitator: Dr. Tyler
-Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Beach201, Facilitator: Shaw
-Activity: SLA304, Day: Monday, Time: 11:00:00, Room: Frank119, Facilitator: Zeldin
-Activity: SLA100B, Day: Monday, Time: 12:00:00, Room: Roman201, Facilitator: Banks
-Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Logos325, Facilitator: Zeldin
-Activity: SLA191A, Day: Monday, Time: 13:00:00, Room: Loft310, Facilitator: Lock
-Activity: SLA201, Day: Monday, Time: 13:00:00, Room: Frank119, Facilitator: Shaw
-Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Frank119, Facilitator: Singer
-Activity: SLA451, Day: Monday, Time: 14:00:00, Room: Loft310, Facilitator: Richards
-Activity: SLA201, Day: Wednesday, Time: 10:00:00, Room: Frank119, Facilitator: Uther
-Activity: SLA451, Day: Wednesday, Time: 10:00:00, Room: Beach301, Facilitator: Richards
-Activity: SLA303, Day: Wednesday, Time: 11:00:00, Room: Logos325, Facilitator: Glen
-Activity: SLA191B, Day: Wednesday, Time: 12:00:00, Room: Loft310, Facilitator: Lock
-Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Beach201, Facilitator: Uther
-Activity: SLA100B, Day: Wednesday, Time: 14:00:00, Room: Beach301, Facilitator: Shaw
-Activity: SLA191A, Day: Wednesday, Time: 14:00:00, Room: Frank119, Facilitator: Banks
-Activity: SLA100A, Day: Wednesday, Time: 15:00:00, Room: Frank119, Facilitator: Banks
-Activity: SLA291, Day: Wednesday, Time: 15:00:00, Room: Loft310, Facilitator: Uther
-Activity: SLA304, Day: Wednesday, Time: 15:00:00, Room: Frank119, Facilitator: Richards
-Activity: SLA449, Day: Wednesday, Time: 15:00:00, Room: Frank119, Facilitator: Singer
-Activity: SLA100B, Day: Friday, Time: 10:00:00, Room: Roman216, Facilitator: Numen
-Activity: SLA291, Day: Friday, Time: 10:00:00, Room: Beach301, Facilitator: Richards
-Activity: SLA303, Day: Friday, Time: 10:00:00, Room: Frank119, Facilitator: Glen
-Activity: SLA191B, Day: Friday, Time: 11:00:00, Room: Loft206, Facilitator: Glen
-Activity: SLA449, Day: Friday, Time: 11:00:00, Room: Frank119, Facilitator: Dr. Tyler
-Activity: SLA100A, Day: Friday, Time: 12:00:00, Room: Beach301, Facilitator: Zeldin
-Activity: SLA451, Day: Friday, Time: 12:00:00, Room: Loft310, Facilitator: Richards
-Activity: SLA191A, Day: Friday, Time: 13:00:00, Room: Loft206, Facilitator: Dr. Tyler
-Activity: SLA304, Day: Friday, Time: 13:00:00, Room: Loft310, Facilitator: Numen
-Activity: SLA201, Day: Friday, Time: 14:00:00, Room: Beach201, Facilitator: Banks
-Activity: SLA394, Day: Friday, Time: 15:00:00, Room: Loft310, Facilitator: Uther
+Activity: SLA100B, Day: Monday, Time: 10:00:00, Room: Roman201, Facilitator: Lock
+Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Roman201, Facilitator: Richards
+Activity: SLA191A, Day: Monday, Time: 11:00:00, Room: Loft206, Facilitator: Numen
+Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Loft310, Facilitator: Zeldin
+Activity: SLA291, Day: Monday, Time: 12:00:00, Room: Beach301, Facilitator: Shaw
+Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Slater003, Facilitator: Singer
+Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Loft310, Facilitator: Lock
+Activity: SLA191B, Day: Monday, Time: 15:00:00, Room: Roman201, Facilitator: Zeldin
+Activity: SLA201, Day: Monday, Time: 15:00:00, Room: Beach201, Facilitator: Numen
+Activity: SLA304, Day: Monday, Time: 15:00:00, Room: Loft206, Facilitator: Glen
+Activity: SLA451, Day: Monday, Time: 15:00:00, Room: Loft310, Facilitator: Singer
+Activity: SLA303, Day: Wednesday, Time: 10:00:00, Room: Beach201, Facilitator: Glen
+Activity: SLA191A, Day: Wednesday, Time: 11:00:00, Room: Frank119, Facilitator: Lock
+Activity: SLA449, Day: Wednesday, Time: 12:00:00, Room: Beach201, Facilitator: Richards
+Activity: SLA100B, Day: Wednesday, Time: 13:00:00, Room: Loft206, Facilitator: Lock
+Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Roman216, Facilitator: Banks
+Activity: SLA100A, Day: Wednesday, Time: 14:00:00, Room: Beach301, Facilitator: Banks
+Activity: SLA201, Day: Wednesday, Time: 14:00:00, Room: Frank119, Facilitator: Uther
+Activity: SLA291, Day: Wednesday, Time: 14:00:00, Room: Loft206, Facilitator: Banks
+Activity: SLA304, Day: Wednesday, Time: 14:00:00, Room: Frank119, Facilitator: Lock
+Activity: SLA191B, Day: Wednesday, Time: 15:00:00, Room: Slater003, Facilitator: Lock
+Activity: SLA451, Day: Wednesday, Time: 15:00:00, Room: Loft310, Facilitator: Zeldin
+Activity: SLA191B, Day: Friday, Time: 10:00:00, Room: Loft206, Facilitator: Lock
+Activity: SLA449, Day: Friday, Time: 10:00:00, Room: Beach301, Facilitator: Numen
+Activity: SLA191A, Day: Friday, Time: 11:00:00, Room: Roman201, Facilitator: Numen
+Activity: SLA304, Day: Friday, Time: 11:00:00, Room: Beach301, Facilitator: Dr. Tyler
+Activity: SLA291, Day: Friday, Time: 12:00:00, Room: Frank119, Facilitator: Singer
+Activity: SLA201, Day: Friday, Time: 13:00:00, Room: Loft206, Facilitator: Singer
+Activity: SLA394, Day: Friday, Time: 13:00:00, Room: Roman216, Facilitator: Lock
+Activity: SLA100A, Day: Friday, Time: 14:00:00, Room: Logos325, Facilitator: Zeldin
+Activity: SLA100B, Day: Friday, Time: 14:00:00, Room: Beach201, Facilitator: Dr. Tyler
+Activity: SLA303, Day: Friday, Time: 15:00:00, Room: Beach301, Facilitator: Glen
+Activity: SLA451, Day: Friday, Time: 15:00:00, Room: Frank119, Facilitator: Richards
 -------------------------------------------------
 Generation 2:
-Population: 3189
-Best Fitness: 8.050033
+Population: 3594
+Best Fitness: 8.171074
 Best Schedule:
-Activity: SLA291, Day: Monday, Time: 10:00:00, Room: Loft206, Facilitator: Dr. Tyler
-Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Loft310, Facilitator: Banks
-Activity: SLA191B, Day: Monday, Time: 11:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Loft206, Facilitator: Dr. Tyler
-Activity: SLA304, Day: Monday, Time: 11:00:00, Room: Beach301, Facilitator: Glen
-Activity: SLA100B, Day: Monday, Time: 12:00:00, Room: Beach201, Facilitator: Zeldin
-Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Loft310, Facilitator: Glen
-Activity: SLA191A, Day: Monday, Time: 13:00:00, Room: Loft206, Facilitator: Banks
-Activity: SLA201, Day: Monday, Time: 13:00:00, Room: Loft310, Facilitator: Richards
-Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Beach201, Facilitator: Uther
-Activity: SLA451, Day: Monday, Time: 14:00:00, Room: Loft310, Facilitator: Richards
-Activity: SLA201, Day: Wednesday, Time: 10:00:00, Room: Logos325, Facilitator: Lock
-Activity: SLA451, Day: Wednesday, Time: 10:00:00, Room: Roman201, Facilitator: Singer
-Activity: SLA303, Day: Wednesday, Time: 11:00:00, Room: Beach301, Facilitator: Richards
-Activity: SLA191B, Day: Wednesday, Time: 12:00:00, Room: Beach301, Facilitator: Numen
-Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Beach301, Facilitator: Numen
-Activity: SLA100B, Day: Wednesday, Time: 14:00:00, Room: Beach301, Facilitator: Lock
-Activity: SLA191A, Day: Wednesday, Time: 14:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA100A, Day: Wednesday, Time: 15:00:00, Room: Beach301, Facilitator: Lock
-Activity: SLA291, Day: Wednesday, Time: 15:00:00, Room: Loft310, Facilitator: Singer
-Activity: SLA304, Day: Wednesday, Time: 15:00:00, Room: Slater003, Facilitator: Banks
-Activity: SLA449, Day: Wednesday, Time: 15:00:00, Room: Beach301, Facilitator: Uther
-Activity: SLA100B, Day: Friday, Time: 10:00:00, Room: Loft310, Facilitator: Glen
-Activity: SLA291, Day: Friday, Time: 10:00:00, Room: Beach301, Facilitator: Shaw
-Activity: SLA303, Day: Friday, Time: 10:00:00, Room: Frank119, Facilitator: Zeldin
-Activity: SLA191B, Day: Friday, Time: 11:00:00, Room: Beach201, Facilitator: Numen
-Activity: SLA449, Day: Friday, Time: 11:00:00, Room: Loft310, Facilitator: Richards
-Activity: SLA100A, Day: Friday, Time: 12:00:00, Room: Roman216, Facilitator: Uther
-Activity: SLA451, Day: Friday, Time: 12:00:00, Room: Loft310, Facilitator: Singer
-Activity: SLA191A, Day: Friday, Time: 13:00:00, Room: Roman201, Facilitator: Uther
-Activity: SLA304, Day: Friday, Time: 13:00:00, Room: Loft206, Facilitator: Shaw
-Activity: SLA201, Day: Friday, Time: 14:00:00, Room: Logos325, Facilitator: Banks
-Activity: SLA394, Day: Friday, Time: 15:00:00, Room: Roman216, Facilitator: Shaw
+Activity: SLA100B, Day: Monday, Time: 10:00:00, Room: Loft206, Facilitator: Banks
+Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Loft206, Facilitator: Banks
+Activity: SLA191A, Day: Monday, Time: 11:00:00, Room: Frank119, Facilitator: Dr. Tyler
+Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Loft310, Facilitator: Zeldin
+Activity: SLA291, Day: Monday, Time: 12:00:00, Room: Frank119, Facilitator: Singer
+Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Roman216, Facilitator: Richards
+Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Logos325, Facilitator: Richards
+Activity: SLA191B, Day: Monday, Time: 15:00:00, Room: Roman201, Facilitator: Zeldin
+Activity: SLA201, Day: Monday, Time: 15:00:00, Room: Beach201, Facilitator: Numen
+Activity: SLA304, Day: Monday, Time: 15:00:00, Room: Beach301, Facilitator: Richards
+Activity: SLA451, Day: Monday, Time: 15:00:00, Room: Loft310, Facilitator: Dr. Tyler
+Activity: SLA303, Day: Wednesday, Time: 10:00:00, Room: Beach201, Facilitator: Glen
+Activity: SLA191A, Day: Wednesday, Time: 11:00:00, Room: Roman201, Facilitator: Lock
+Activity: SLA449, Day: Wednesday, Time: 12:00:00, Room: Beach201, Facilitator: Richards
+Activity: SLA100B, Day: Wednesday, Time: 13:00:00, Room: Roman216, Facilitator: Glen
+Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Beach201, Facilitator: Dr. Tyler
+Activity: SLA100A, Day: Wednesday, Time: 14:00:00, Room: Loft310, Facilitator: Banks
+Activity: SLA201, Day: Wednesday, Time: 14:00:00, Room: Beach201, Facilitator: Zeldin
+Activity: SLA291, Day: Wednesday, Time: 14:00:00, Room: Loft206, Facilitator: Shaw
+Activity: SLA304, Day: Wednesday, Time: 14:00:00, Room: Frank119, Facilitator: Lock
+Activity: SLA191B, Day: Wednesday, Time: 15:00:00, Room: Frank119, Facilitator: Lock
+Activity: SLA451, Day: Wednesday, Time: 15:00:00, Room: Loft310, Facilitator: Richards
+Activity: SLA191B, Day: Friday, Time: 10:00:00, Room: Beach301, Facilitator: Lock
+Activity: SLA449, Day: Friday, Time: 10:00:00, Room: Logos325, Facilitator: Singer
+Activity: SLA191A, Day: Friday, Time: 11:00:00, Room: Roman201, Facilitator: Numen
+Activity: SLA304, Day: Friday, Time: 11:00:00, Room: Logos325, Facilitator: Zeldin
+Activity: SLA291, Day: Friday, Time: 12:00:00, Room: Beach201, Facilitator: Dr. Tyler
+Activity: SLA201, Day: Friday, Time: 13:00:00, Room: Loft206, Facilitator: Zeldin
+Activity: SLA394, Day: Friday, Time: 13:00:00, Room: Frank119, Facilitator: Banks
+Activity: SLA100A, Day: Friday, Time: 14:00:00, Room: Loft206, Facilitator: Zeldin
+Activity: SLA100B, Day: Friday, Time: 14:00:00, Room: Beach301, Facilitator: Numen
+Activity: SLA303, Day: Friday, Time: 15:00:00, Room: Beach301, Facilitator: Glen
+Activity: SLA451, Day: Friday, Time: 15:00:00, Room: Loft310, Facilitator: Singer
 -------------------------------------------------
 Generation 3:
-Population: 3158
-Best Fitness: 11.0829315
+Population: 3694
+Best Fitness: 11.250681
 Best Schedule:
-Activity: SLA291, Day: Monday, Time: 10:00:00, Room: Beach201, Facilitator: Zeldin
-Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Beach301, Facilitator: Richards
-Activity: SLA191B, Day: Monday, Time: 11:00:00, Room: Logos325, Facilitator: Dr. Tyler
-Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Beach201, Facilitator: Glen
-Activity: SLA304, Day: Monday, Time: 11:00:00, Room: Roman216, Facilitator: Singer
-Activity: SLA100B, Day: Monday, Time: 12:00:00, Room: Beach301, Facilitator: Numen
-Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Roman201, Facilitator: Richards
-Activity: SLA191A, Day: Monday, Time: 13:00:00, Room: Frank119, Facilitator: Zeldin
-Activity: SLA201, Day: Monday, Time: 13:00:00, Room: Beach201, Facilitator: Shaw
-Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Logos325, Facilitator: Banks
-Activity: SLA451, Day: Monday, Time: 14:00:00, Room: Loft310, Facilitator: Shaw
-Activity: SLA201, Day: Wednesday, Time: 10:00:00, Room: Frank119, Facilitator: Numen
-Activity: SLA451, Day: Wednesday, Time: 10:00:00, Room: Beach301, Facilitator: Uther
-Activity: SLA303, Day: Wednesday, Time: 11:00:00, Room: Loft206, Facilitator: Singer
-Activity: SLA191B, Day: Wednesday, Time: 12:00:00, Room: Beach201, Facilitator: Glen
-Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Roman216, Facilitator: Lock
-Activity: SLA100B, Day: Wednesday, Time: 14:00:00, Room: Loft206, Facilitator: Lock
-Activity: SLA191A, Day: Wednesday, Time: 14:00:00, Room: Frank119, Facilitator: Glen
-Activity: SLA100A, Day: Wednesday, Time: 15:00:00, Room: Frank119, Facilitator: Uther
-Activity: SLA291, Day: Wednesday, Time: 15:00:00, Room: Roman201, Facilitator: Banks
-Activity: SLA304, Day: Wednesday, Time: 15:00:00, Room: Beach301, Facilitator: Glen
-Activity: SLA449, Day: Wednesday, Time: 15:00:00, Room: Beach201, Facilitator: Richards
-Activity: SLA100B, Day: Friday, Time: 10:00:00, Room: Roman201, Facilitator: Banks
-Activity: SLA291, Day: Friday, Time: 10:00:00, Room: Beach201, Facilitator: Lock
-Activity: SLA303, Day: Friday, Time: 10:00:00, Room: Loft206, Facilitator: Shaw
-Activity: SLA191B, Day: Friday, Time: 11:00:00, Room: Beach201, Facilitator: Lock
-Activity: SLA449, Day: Friday, Time: 11:00:00, Room: Frank119, Facilitator: Shaw
-Activity: SLA100A, Day: Friday, Time: 12:00:00, Room: Frank119, Facilitator: Shaw
-Activity: SLA451, Day: Friday, Time: 12:00:00, Room: Loft310, Facilitator: Glen
-Activity: SLA191A, Day: Friday, Time: 13:00:00, Room: Beach301, Facilitator: Banks
-Activity: SLA304, Day: Friday, Time: 13:00:00, Room: Slater003, Facilitator: Zeldin
-Activity: SLA201, Day: Friday, Time: 14:00:00, Room: Loft310, Facilitator: Zeldin
-Activity: SLA394, Day: Friday, Time: 15:00:00, Room: Loft206, Facilitator: Singer
+Activity: SLA100B, Day: Monday, Time: 10:00:00, Room: Frank119, Facilitator: Dr. Tyler
+Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Beach201, Facilitator: Dr. Tyler
+Activity: SLA191A, Day: Monday, Time: 11:00:00, Room: Loft310, Facilitator: Richards
+Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Loft206, Facilitator: Glen
+Activity: SLA291, Day: Monday, Time: 12:00:00, Room: Beach201, Facilitator: Lock
+Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Roman216, Facilitator: Zeldin
+Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Loft206, Facilitator: Shaw
+Activity: SLA191B, Day: Monday, Time: 15:00:00, Room: Frank119, Facilitator: Banks
+Activity: SLA201, Day: Monday, Time: 15:00:00, Room: Slater003, Facilitator: Shaw
+Activity: SLA304, Day: Monday, Time: 15:00:00, Room: Roman201, Facilitator: Zeldin
+Activity: SLA451, Day: Monday, Time: 15:00:00, Room: Beach201, Facilitator: Richards
+Activity: SLA303, Day: Wednesday, Time: 10:00:00, Room: Loft310, Facilitator: Shaw
+Activity: SLA191A, Day: Wednesday, Time: 11:00:00, Room: Loft206, Facilitator: Glen
+Activity: SLA449, Day: Wednesday, Time: 12:00:00, Room: Loft206, Facilitator: Zeldin
+Activity: SLA100B, Day: Wednesday, Time: 13:00:00, Room: Loft310, Facilitator: Numen
+Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Frank119, Facilitator: Zeldin
+Activity: SLA100A, Day: Wednesday, Time: 14:00:00, Room: Beach301, Facilitator: Zeldin
+Activity: SLA201, Day: Wednesday, Time: 14:00:00, Room: Beach201, Facilitator: Numen
+Activity: SLA291, Day: Wednesday, Time: 14:00:00, Room: Loft310, Facilitator: Banks
+Activity: SLA304, Day: Wednesday, Time: 14:00:00, Room: Roman201, Facilitator: Uther
+Activity: SLA191B, Day: Wednesday, Time: 15:00:00, Room: Beach201, Facilitator: Uther
+Activity: SLA451, Day: Wednesday, Time: 15:00:00, Room: Loft310, Facilitator: Singer
+Activity: SLA191B, Day: Friday, Time: 10:00:00, Room: Beach301, Facilitator: Lock
+Activity: SLA449, Day: Friday, Time: 10:00:00, Room: Logos325, Facilitator: Zeldin
+Activity: SLA191A, Day: Friday, Time: 11:00:00, Room: Roman201, Facilitator: Numen
+Activity: SLA304, Day: Friday, Time: 11:00:00, Room: Beach301, Facilitator: Banks
+Activity: SLA291, Day: Friday, Time: 12:00:00, Room: Loft310, Facilitator: Singer
+Activity: SLA201, Day: Friday, Time: 13:00:00, Room: Loft206, Facilitator: Singer
+Activity: SLA394, Day: Friday, Time: 13:00:00, Room: Slater003, Facilitator: Zeldin
+Activity: SLA100A, Day: Friday, Time: 14:00:00, Room: Roman201, Facilitator: Uther
+Activity: SLA100B, Day: Friday, Time: 14:00:00, Room: Loft206, Facilitator: Glen
+Activity: SLA303, Day: Friday, Time: 15:00:00, Room: Loft206, Facilitator: Numen
+Activity: SLA451, Day: Friday, Time: 15:00:00, Room: Loft310, Facilitator: Zeldin
 -------------------------------------------------
 Generation 4:
-Population: 2361
-Best Fitness: 13.75598
+Population: 2997
+Best Fitness: 13.756002
 Best Schedule:
-Activity: SLA291, Day: Monday, Time: 10:00:00, Room: Loft310, Facilitator: Numen
-Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Roman201, Facilitator: Glen
-Activity: SLA191B, Day: Monday, Time: 11:00:00, Room: Loft206, Facilitator: Lock
-Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Loft310, Facilitator: Numen
-Activity: SLA304, Day: Monday, Time: 11:00:00, Room: Frank119, Facilitator: Uther
-Activity: SLA100B, Day: Monday, Time: 12:00:00, Room: Frank119, Facilitator: Numen
-Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Beach201, Facilitator: Zeldin
-Activity: SLA191A, Day: Monday, Time: 13:00:00, Room: Loft310, Facilitator: Lock
-Activity: SLA201, Day: Monday, Time: 13:00:00, Room: Loft206, Facilitator: Singer
-Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Frank119, Facilitator: Singer
-Activity: SLA451, Day: Monday, Time: 14:00:00, Room: Loft310, Facilitator: Uther
-Activity: SLA201, Day: Wednesday, Time: 10:00:00, Room: Loft310, Facilitator: Shaw
-Activity: SLA451, Day: Wednesday, Time: 10:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA303, Day: Wednesday, Time: 11:00:00, Room: Beach301, Facilitator: Glen
-Activity: SLA191B, Day: Wednesday, Time: 12:00:00, Room: Loft310, Facilitator: Lock
-Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Logos325, Facilitator: Lock
-Activity: SLA100B, Day: Wednesday, Time: 14:00:00, Room: Beach301, Facilitator: Lock
-Activity: SLA191A, Day: Wednesday, Time: 14:00:00, Room: Frank119, Facilitator: Banks
-Activity: SLA100A, Day: Wednesday, Time: 15:00:00, Room: Roman201, Facilitator: Lock
-Activity: SLA291, Day: Wednesday, Time: 15:00:00, Room: Frank119, Facilitator: Shaw
-Activity: SLA304, Day: Wednesday, Time: 15:00:00, Room: Frank119, Facilitator: Richards
-Activity: SLA449, Day: Wednesday, Time: 15:00:00, Room: Frank119, Facilitator: Singer
-Activity: SLA100B, Day: Friday, Time: 10:00:00, Room: Roman201, Facilitator: Banks
-Activity: SLA291, Day: Friday, Time: 10:00:00, Room: Loft206, Facilitator: Zeldin
-Activity: SLA303, Day: Friday, Time: 10:00:00, Room: Frank119, Facilitator: Glen
-Activity: SLA191B, Day: Friday, Time: 11:00:00, Room: Loft310, Facilitator: Richards
-Activity: SLA449, Day: Friday, Time: 11:00:00, Room: Loft206, Facilitator: Shaw
-Activity: SLA100A, Day: Friday, Time: 12:00:00, Room: Beach301, Facilitator: Zeldin
-Activity: SLA451, Day: Friday, Time: 12:00:00, Room: Loft310, Facilitator: Richards
-Activity: SLA191A, Day: Friday, Time: 13:00:00, Room: Loft310, Facilitator: Glen
-Activity: SLA304, Day: Friday, Time: 13:00:00, Room: Slater003, Facilitator: Singer
-Activity: SLA201, Day: Friday, Time: 14:00:00, Room: Beach201, Facilitator: Banks
-Activity: SLA394, Day: Friday, Time: 15:00:00, Room: Slater003, Facilitator: Zeldin
+Activity: SLA100B, Day: Monday, Time: 10:00:00, Room: Loft310, Facilitator: Uther
+Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Loft310, Facilitator: Glen
+Activity: SLA191A, Day: Monday, Time: 11:00:00, Room: Loft206, Facilitator: Numen
+Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Frank119, Facilitator: Uther
+Activity: SLA291, Day: Monday, Time: 12:00:00, Room: Loft206, Facilitator: Zeldin
+Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Slater003, Facilitator: Richards
+Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Loft206, Facilitator: Banks
+Activity: SLA191B, Day: Monday, Time: 15:00:00, Room: Beach301, Facilitator: Zeldin
+Activity: SLA201, Day: Monday, Time: 15:00:00, Room: Frank119, Facilitator: Banks
+Activity: SLA304, Day: Monday, Time: 15:00:00, Room: Slater003, Facilitator: Shaw
+Activity: SLA451, Day: Monday, Time: 15:00:00, Room: Loft310, Facilitator: Singer
+Activity: SLA303, Day: Wednesday, Time: 10:00:00, Room: Frank119, Facilitator: Numen
+Activity: SLA191A, Day: Wednesday, Time: 11:00:00, Room: Frank119, Facilitator: Lock
+Activity: SLA449, Day: Wednesday, Time: 12:00:00, Room: Loft206, Facilitator: Glen
+Activity: SLA100B, Day: Wednesday, Time: 13:00:00, Room: Loft310, Facilitator: Numen
+Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Roman201, Facilitator: Singer
+Activity: SLA100A, Day: Wednesday, Time: 14:00:00, Room: Loft206, Facilitator: Lock
+Activity: SLA201, Day: Wednesday, Time: 14:00:00, Room: Loft310, Facilitator: Glen
+Activity: SLA291, Day: Wednesday, Time: 14:00:00, Room: Beach301, Facilitator: Singer
+Activity: SLA304, Day: Wednesday, Time: 14:00:00, Room: Slater003, Facilitator: Uther
+Activity: SLA191B, Day: Wednesday, Time: 15:00:00, Room: Roman201, Facilitator: Banks
+Activity: SLA451, Day: Wednesday, Time: 15:00:00, Room: Roman216, Facilitator: Shaw
+Activity: SLA191B, Day: Friday, Time: 10:00:00, Room: Beach201, Facilitator: Lock
+Activity: SLA449, Day: Friday, Time: 10:00:00, Room: Logos325, Facilitator: Shaw
+Activity: SLA191A, Day: Friday, Time: 11:00:00, Room: Beach201, Facilitator: Shaw
+Activity: SLA304, Day: Friday, Time: 11:00:00, Room: Beach301, Facilitator: Dr. Tyler
+Activity: SLA291, Day: Friday, Time: 12:00:00, Room: Beach201, Facilitator: Zeldin
+Activity: SLA201, Day: Friday, Time: 13:00:00, Room: Beach301, Facilitator: Banks
+Activity: SLA394, Day: Friday, Time: 13:00:00, Room: Beach201, Facilitator: Richards
+Activity: SLA100A, Day: Friday, Time: 14:00:00, Room: Frank119, Facilitator: Richards
+Activity: SLA100B, Day: Friday, Time: 14:00:00, Room: Roman201, Facilitator: Glen
+Activity: SLA303, Day: Friday, Time: 15:00:00, Room: Beach301, Facilitator: Glen
+Activity: SLA451, Day: Friday, Time: 15:00:00, Room: Loft310, Facilitator: Singer
 -------------------------------------------------
 Generation 5:
-Population: 1412
-Best Fitness: 16.146658
+Population: 1956
+Best Fitness: 15.962127
 Best Schedule:
-Activity: SLA291, Day: Monday, Time: 10:00:00, Room: Beach201, Facilitator: Zeldin
-Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Loft310, Facilitator: Banks
-Activity: SLA191B, Day: Monday, Time: 11:00:00, Room: Frank119, Facilitator: Lock
-Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Beach201, Facilitator: Zeldin
-Activity: SLA304, Day: Monday, Time: 11:00:00, Room: Roman201, Facilitator: Richards
-Activity: SLA100B, Day: Monday, Time: 12:00:00, Room: Loft206, Facilitator: Lock
-Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Beach301, Facilitator: Zeldin
-Activity: SLA191A, Day: Monday, Time: 13:00:00, Room: Loft310, Facilitator: Lock
-Activity: SLA201, Day: Monday, Time: 13:00:00, Room: Beach201, Facilitator: Richards
-Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Beach201, Facilitator: Singer
-Activity: SLA451, Day: Monday, Time: 14:00:00, Room: Loft310, Facilitator: Richards
-Activity: SLA201, Day: Wednesday, Time: 10:00:00, Room: Frank119, Facilitator: Uther
-Activity: SLA451, Day: Wednesday, Time: 10:00:00, Room: Loft310, Facilitator: Singer
-Activity: SLA303, Day: Wednesday, Time: 11:00:00, Room: Beach301, Facilitator: Numen
-Activity: SLA191B, Day: Wednesday, Time: 12:00:00, Room: Loft310, Facilitator: Zeldin
-Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Slater003, Facilitator: Zeldin
-Activity: SLA100B, Day: Wednesday, Time: 14:00:00, Room: Beach301, Facilitator: Shaw
-Activity: SLA191A, Day: Wednesday, Time: 14:00:00, Room: Loft206, Facilitator: Zeldin
-Activity: SLA100A, Day: Wednesday, Time: 15:00:00, Room: Roman201, Facilitator: Glen
-Activity: SLA291, Day: Wednesday, Time: 15:00:00, Room: Loft206, Facilitator: Banks
-Activity: SLA304, Day: Wednesday, Time: 15:00:00, Room: Loft206, Facilitator: Numen
-Activity: SLA449, Day: Wednesday, Time: 15:00:00, Room: Loft310, Facilitator: Shaw
-Activity: SLA100B, Day: Friday, Time: 10:00:00, Room: Roman216, Facilitator: Numen
-Activity: SLA291, Day: Friday, Time: 10:00:00, Room: Loft206, Facilitator: Singer
-Activity: SLA303, Day: Friday, Time: 10:00:00, Room: Frank119, Facilitator: Glen
-Activity: SLA191B, Day: Friday, Time: 11:00:00, Room: Loft206, Facilitator: Glen
-Activity: SLA449, Day: Friday, Time: 11:00:00, Room: Slater003, Facilitator: Singer
-Activity: SLA100A, Day: Friday, Time: 12:00:00, Room: Beach301, Facilitator: Glen
-Activity: SLA451, Day: Friday, Time: 12:00:00, Room: Loft310, Facilitator: Richards
-Activity: SLA191A, Day: Friday, Time: 13:00:00, Room: Beach301, Facilitator: Zeldin
-Activity: SLA304, Day: Friday, Time: 13:00:00, Room: Roman201, Facilitator: Shaw
-Activity: SLA201, Day: Friday, Time: 14:00:00, Room: Beach201, Facilitator: Banks
-Activity: SLA394, Day: Friday, Time: 15:00:00, Room: Roman201, Facilitator: Singer
+Activity: SLA100B, Day: Monday, Time: 10:00:00, Room: Roman201, Facilitator: Lock
+Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Roman201, Facilitator: Richards
+Activity: SLA191A, Day: Monday, Time: 11:00:00, Room: Beach201, Facilitator: Banks
+Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Loft310, Facilitator: Shaw
+Activity: SLA291, Day: Monday, Time: 12:00:00, Room: Roman201, Facilitator: Banks
+Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Roman201, Facilitator: Richards
+Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Loft206, Facilitator: Banks
+Activity: SLA191B, Day: Monday, Time: 15:00:00, Room: Beach301, Facilitator: Zeldin
+Activity: SLA201, Day: Monday, Time: 15:00:00, Room: Frank119, Facilitator: Banks
+Activity: SLA304, Day: Monday, Time: 15:00:00, Room: Slater003, Facilitator: Shaw
+Activity: SLA451, Day: Monday, Time: 15:00:00, Room: Loft310, Facilitator: Singer
+Activity: SLA303, Day: Wednesday, Time: 10:00:00, Room: Beach201, Facilitator: Glen
+Activity: SLA191A, Day: Wednesday, Time: 11:00:00, Room: Loft310, Facilitator: Richards
+Activity: SLA449, Day: Wednesday, Time: 12:00:00, Room: Loft206, Facilitator: Banks
+Activity: SLA100B, Day: Wednesday, Time: 13:00:00, Room: Loft206, Facilitator: Glen
+Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Roman201, Facilitator: Singer
+Activity: SLA100A, Day: Wednesday, Time: 14:00:00, Room: Loft206, Facilitator: Lock
+Activity: SLA201, Day: Wednesday, Time: 14:00:00, Room: Roman201, Facilitator: Banks
+Activity: SLA291, Day: Wednesday, Time: 14:00:00, Room: Beach301, Facilitator: Singer
+Activity: SLA304, Day: Wednesday, Time: 14:00:00, Room: Loft206, Facilitator: Zeldin
+Activity: SLA191B, Day: Wednesday, Time: 15:00:00, Room: Roman201, Facilitator: Banks
+Activity: SLA451, Day: Wednesday, Time: 15:00:00, Room: Loft310, Facilitator: Zeldin
+Activity: SLA191B, Day: Friday, Time: 10:00:00, Room: Beach301, Facilitator: Zeldin
+Activity: SLA449, Day: Friday, Time: 10:00:00, Room: Frank119, Facilitator: Uther
+Activity: SLA191A, Day: Friday, Time: 11:00:00, Room: Beach201, Facilitator: Shaw
+Activity: SLA304, Day: Friday, Time: 11:00:00, Room: Loft206, Facilitator: Banks
+Activity: SLA291, Day: Friday, Time: 12:00:00, Room: Roman201, Facilitator: Banks
+Activity: SLA201, Day: Friday, Time: 13:00:00, Room: Beach301, Facilitator: Banks
+Activity: SLA394, Day: Friday, Time: 13:00:00, Room: Beach201, Facilitator: Lock
+Activity: SLA100A, Day: Friday, Time: 14:00:00, Room: Loft310, Facilitator: Lock
+Activity: SLA100B, Day: Friday, Time: 14:00:00, Room: Beach301, Facilitator: Banks
+Activity: SLA303, Day: Friday, Time: 15:00:00, Room: Beach301, Facilitator: Glen
+Activity: SLA451, Day: Friday, Time: 15:00:00, Room: Loft310, Facilitator: Singer
 -------------------------------------------------
 Generation 6:
-Population: 761
-Best Fitness: 18.161503
+Population: 1187
+Best Fitness: 17.992418
 Best Schedule:
-Activity: SLA291, Day: Monday, Time: 10:00:00, Room: Beach201, Facilitator: Zeldin
-Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Beach301, Facilitator: Glen
-Activity: SLA191B, Day: Monday, Time: 11:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Loft206, Facilitator: Singer
-Activity: SLA304, Day: Monday, Time: 11:00:00, Room: Roman216, Facilitator: Banks
-Activity: SLA100B, Day: Monday, Time: 12:00:00, Room: Loft310, Facilitator: Lock
-Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Beach301, Facilitator: Zeldin
-Activity: SLA191A, Day: Monday, Time: 13:00:00, Room: Loft206, Facilitator: Lock
-Activity: SLA201, Day: Monday, Time: 13:00:00, Room: Beach301, Facilitator: Shaw
-Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Frank119, Facilitator: Glen
-Activity: SLA451, Day: Monday, Time: 14:00:00, Room: Loft310, Facilitator: Lock
-Activity: SLA201, Day: Wednesday, Time: 10:00:00, Room: Frank119, Facilitator: Glen
-Activity: SLA451, Day: Wednesday, Time: 10:00:00, Room: Logos325, Facilitator: Uther
-Activity: SLA303, Day: Wednesday, Time: 11:00:00, Room: Frank119, Facilitator: Glen
-Activity: SLA191B, Day: Wednesday, Time: 12:00:00, Room: Frank119, Facilitator: Lock
-Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Beach301, Facilitator: Zeldin
-Activity: SLA100B, Day: Wednesday, Time: 14:00:00, Room: Beach201, Facilitator: Numen
-Activity: SLA191A, Day: Wednesday, Time: 14:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA100A, Day: Wednesday, Time: 15:00:00, Room: Frank119, Facilitator: Banks
-Activity: SLA291, Day: Wednesday, Time: 15:00:00, Room: Loft310, Facilitator: Lock
-Activity: SLA304, Day: Wednesday, Time: 15:00:00, Room: Loft206, Facilitator: Numen
-Activity: SLA449, Day: Wednesday, Time: 15:00:00, Room: Beach301, Facilitator: Shaw
-Activity: SLA100B, Day: Friday, Time: 10:00:00, Room: Loft206, Facilitator: Numen
-Activity: SLA291, Day: Friday, Time: 10:00:00, Room: Frank119, Facilitator: Zeldin
-Activity: SLA303, Day: Friday, Time: 10:00:00, Room: Beach301, Facilitator: Shaw
-Activity: SLA191B, Day: Friday, Time: 11:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA449, Day: Friday, Time: 11:00:00, Room: Loft206, Facilitator: Shaw
-Activity: SLA100A, Day: Friday, Time: 12:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA451, Day: Friday, Time: 12:00:00, Room: Loft310, Facilitator: Richards
-Activity: SLA191A, Day: Friday, Time: 13:00:00, Room: Beach201, Facilitator: Zeldin
-Activity: SLA304, Day: Friday, Time: 13:00:00, Room: Beach301, Facilitator: Banks
-Activity: SLA201, Day: Friday, Time: 14:00:00, Room: Beach301, Facilitator: Zeldin
-Activity: SLA394, Day: Friday, Time: 15:00:00, Room: Roman201, Facilitator: Zeldin
+Activity: SLA100B, Day: Monday, Time: 10:00:00, Room: Roman201, Facilitator: Lock
+Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Roman201, Facilitator: Lock
+Activity: SLA191A, Day: Monday, Time: 11:00:00, Room: Loft206, Facilitator: Zeldin
+Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Beach301, Facilitator: Numen
+Activity: SLA291, Day: Monday, Time: 12:00:00, Room: Loft206, Facilitator: Zeldin
+Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Slater003, Facilitator: Singer
+Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Loft206, Facilitator: Singer
+Activity: SLA191B, Day: Monday, Time: 15:00:00, Room: Roman201, Facilitator: Glen
+Activity: SLA201, Day: Monday, Time: 15:00:00, Room: Frank119, Facilitator: Banks
+Activity: SLA304, Day: Monday, Time: 15:00:00, Room: Beach301, Facilitator: Numen
+Activity: SLA451, Day: Monday, Time: 15:00:00, Room: Loft310, Facilitator: Singer
+Activity: SLA303, Day: Wednesday, Time: 10:00:00, Room: Beach201, Facilitator: Glen
+Activity: SLA191A, Day: Wednesday, Time: 11:00:00, Room: Loft310, Facilitator: Zeldin
+Activity: SLA449, Day: Wednesday, Time: 12:00:00, Room: Loft310, Facilitator: Singer
+Activity: SLA100B, Day: Wednesday, Time: 13:00:00, Room: Loft206, Facilitator: Lock
+Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Roman201, Facilitator: Singer
+Activity: SLA100A, Day: Wednesday, Time: 14:00:00, Room: Loft206, Facilitator: Lock
+Activity: SLA201, Day: Wednesday, Time: 14:00:00, Room: Roman201, Facilitator: Banks
+Activity: SLA291, Day: Wednesday, Time: 14:00:00, Room: Beach301, Facilitator: Singer
+Activity: SLA304, Day: Wednesday, Time: 14:00:00, Room: Roman216, Facilitator: Uther
+Activity: SLA191B, Day: Wednesday, Time: 15:00:00, Room: Frank119, Facilitator: Numen
+Activity: SLA451, Day: Wednesday, Time: 15:00:00, Room: Loft310, Facilitator: Zeldin
+Activity: SLA191B, Day: Friday, Time: 10:00:00, Room: Frank119, Facilitator: Lock
+Activity: SLA449, Day: Friday, Time: 10:00:00, Room: Roman216, Facilitator: Dr. Tyler
+Activity: SLA191A, Day: Friday, Time: 11:00:00, Room: Loft206, Facilitator: Lock
+Activity: SLA304, Day: Friday, Time: 11:00:00, Room: Beach301, Facilitator: Glen
+Activity: SLA291, Day: Friday, Time: 12:00:00, Room: Loft206, Facilitator: Lock
+Activity: SLA201, Day: Friday, Time: 13:00:00, Room: Frank119, Facilitator: Banks
+Activity: SLA394, Day: Friday, Time: 13:00:00, Room: Slater003, Facilitator: Lock
+Activity: SLA100A, Day: Friday, Time: 14:00:00, Room: Loft310, Facilitator: Banks
+Activity: SLA100B, Day: Friday, Time: 14:00:00, Room: Beach201, Facilitator: Dr. Tyler
+Activity: SLA303, Day: Friday, Time: 15:00:00, Room: Beach301, Facilitator: Glen
+Activity: SLA451, Day: Friday, Time: 15:00:00, Room: Loft310, Facilitator: Singer
 -------------------------------------------------
 Generation 7:
-Population: 377
-Best Fitness: 20.00265
+Population: 595
+Best Fitness: 19.911598
 Best Schedule:
-Activity: SLA291, Day: Monday, Time: 10:00:00, Room: Beach201, Facilitator: Zeldin
-Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Beach301, Facilitator: Glen
-Activity: SLA191B, Day: Monday, Time: 11:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Loft206, Facilitator: Singer
-Activity: SLA304, Day: Monday, Time: 11:00:00, Room: Roman216, Facilitator: Banks
-Activity: SLA100B, Day: Monday, Time: 12:00:00, Room: Loft310, Facilitator: Lock
-Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Beach301, Facilitator: Zeldin
-Activity: SLA191A, Day: Monday, Time: 13:00:00, Room: Loft206, Facilitator: Lock
-Activity: SLA201, Day: Monday, Time: 13:00:00, Room: Beach301, Facilitator: Shaw
-Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Frank119, Facilitator: Singer
-Activity: SLA451, Day: Monday, Time: 14:00:00, Room: Loft310, Facilitator: Richards
-Activity: SLA201, Day: Wednesday, Time: 10:00:00, Room: Frank119, Facilitator: Glen
-Activity: SLA451, Day: Wednesday, Time: 10:00:00, Room: Logos325, Facilitator: Uther
-Activity: SLA303, Day: Wednesday, Time: 11:00:00, Room: Frank119, Facilitator: Glen
-Activity: SLA191B, Day: Wednesday, Time: 12:00:00, Room: Frank119, Facilitator: Lock
-Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Roman216, Facilitator: Richards
-Activity: SLA100B, Day: Wednesday, Time: 14:00:00, Room: Beach201, Facilitator: Numen
-Activity: SLA191A, Day: Wednesday, Time: 14:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA100A, Day: Wednesday, Time: 15:00:00, Room: Frank119, Facilitator: Banks
-Activity: SLA291, Day: Wednesday, Time: 15:00:00, Room: Loft310, Facilitator: Lock
-Activity: SLA304, Day: Wednesday, Time: 15:00:00, Room: Beach201, Facilitator: Singer
-Activity: SLA449, Day: Wednesday, Time: 15:00:00, Room: Beach301, Facilitator: Shaw
-Activity: SLA100B, Day: Friday, Time: 10:00:00, Room: Loft206, Facilitator: Numen
-Activity: SLA291, Day: Friday, Time: 10:00:00, Room: Frank119, Facilitator: Zeldin
-Activity: SLA303, Day: Friday, Time: 10:00:00, Room: Beach301, Facilitator: Shaw
-Activity: SLA191B, Day: Friday, Time: 11:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA449, Day: Friday, Time: 11:00:00, Room: Loft206, Facilitator: Shaw
-Activity: SLA100A, Day: Friday, Time: 12:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA451, Day: Friday, Time: 12:00:00, Room: Loft310, Facilitator: Richards
-Activity: SLA191A, Day: Friday, Time: 13:00:00, Room: Beach201, Facilitator: Zeldin
-Activity: SLA304, Day: Friday, Time: 13:00:00, Room: Roman201, Facilitator: Banks
-Activity: SLA201, Day: Friday, Time: 14:00:00, Room: Beach301, Facilitator: Zeldin
-Activity: SLA394, Day: Friday, Time: 15:00:00, Room: Roman201, Facilitator: Zeldin
+Activity: SLA100B, Day: Monday, Time: 10:00:00, Room: Roman201, Facilitator: Lock
+Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Roman201, Facilitator: Lock
+Activity: SLA191A, Day: Monday, Time: 11:00:00, Room: Loft206, Facilitator: Zeldin
+Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Frank119, Facilitator: Singer
+Activity: SLA291, Day: Monday, Time: 12:00:00, Room: Beach301, Facilitator: Lock
+Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Slater003, Facilitator: Singer
+Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Loft206, Facilitator: Shaw
+Activity: SLA191B, Day: Monday, Time: 15:00:00, Room: Roman201, Facilitator: Zeldin
+Activity: SLA201, Day: Monday, Time: 15:00:00, Room: Loft206, Facilitator: Shaw
+Activity: SLA304, Day: Monday, Time: 15:00:00, Room: Beach301, Facilitator: Richards
+Activity: SLA451, Day: Monday, Time: 15:00:00, Room: Loft310, Facilitator: Singer
+Activity: SLA303, Day: Wednesday, Time: 10:00:00, Room: Beach201, Facilitator: Glen
+Activity: SLA191A, Day: Wednesday, Time: 11:00:00, Room: Roman201, Facilitator: Zeldin
+Activity: SLA449, Day: Wednesday, Time: 12:00:00, Room: Beach301, Facilitator: Uther
+Activity: SLA100B, Day: Wednesday, Time: 13:00:00, Room: Beach301, Facilitator: Zeldin
+Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Roman201, Facilitator: Singer
+Activity: SLA100A, Day: Wednesday, Time: 14:00:00, Room: Frank119, Facilitator: Zeldin
+Activity: SLA201, Day: Wednesday, Time: 14:00:00, Room: Loft310, Facilitator: Glen
+Activity: SLA291, Day: Wednesday, Time: 14:00:00, Room: Beach301, Facilitator: Singer
+Activity: SLA304, Day: Wednesday, Time: 14:00:00, Room: Slater003, Facilitator: Shaw
+Activity: SLA191B, Day: Wednesday, Time: 15:00:00, Room: Beach301, Facilitator: Glen
+Activity: SLA451, Day: Wednesday, Time: 15:00:00, Room: Loft310, Facilitator: Zeldin
+Activity: SLA191B, Day: Friday, Time: 10:00:00, Room: Frank119, Facilitator: Lock
+Activity: SLA449, Day: Friday, Time: 10:00:00, Room: Loft310, Facilitator: Singer
+Activity: SLA191A, Day: Friday, Time: 11:00:00, Room: Roman201, Facilitator: Banks
+Activity: SLA304, Day: Friday, Time: 11:00:00, Room: Beach301, Facilitator: Glen
+Activity: SLA291, Day: Friday, Time: 12:00:00, Room: Frank119, Facilitator: Singer
+Activity: SLA201, Day: Friday, Time: 13:00:00, Room: Frank119, Facilitator: Banks
+Activity: SLA394, Day: Friday, Time: 13:00:00, Room: Beach201, Facilitator: Richards
+Activity: SLA100A, Day: Friday, Time: 14:00:00, Room: Frank119, Facilitator: Richards
+Activity: SLA100B, Day: Friday, Time: 14:00:00, Room: Roman201, Facilitator: Glen
+Activity: SLA303, Day: Friday, Time: 15:00:00, Room: Beach301, Facilitator: Glen
+Activity: SLA451, Day: Friday, Time: 15:00:00, Room: Loft310, Facilitator: Singer
 -------------------------------------------------
 Generation 8:
-Population: 340
-Best Fitness: 21.62588
+Population: 460
+Best Fitness: 21.60609
 Best Schedule:
-Activity: SLA291, Day: Monday, Time: 10:00:00, Room: Loft310, Facilitator: Numen
-Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Roman201, Facilitator: Glen
-Activity: SLA191B, Day: Monday, Time: 11:00:00, Room: Frank119, Facilitator: Numen
-Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Beach301, Facilitator: Dr. Tyler
-Activity: SLA304, Day: Monday, Time: 11:00:00, Room: Slater003, Facilitator: Singer
-Activity: SLA100B, Day: Monday, Time: 12:00:00, Room: Beach201, Facilitator: Numen
-Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Frank119, Facilitator: Singer
-Activity: SLA191A, Day: Monday, Time: 13:00:00, Room: Loft310, Facilitator: Lock
-Activity: SLA201, Day: Monday, Time: 13:00:00, Room: Loft206, Facilitator: Singer
-Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Frank119, Facilitator: Singer
-Activity: SLA451, Day: Monday, Time: 14:00:00, Room: Loft310, Facilitator: Shaw
-Activity: SLA201, Day: Wednesday, Time: 10:00:00, Room: Beach301, Facilitator: Richards
-Activity: SLA451, Day: Wednesday, Time: 10:00:00, Room: Loft310, Facilitator: Singer
-Activity: SLA303, Day: Wednesday, Time: 11:00:00, Room: Beach301, Facilitator: Glen
-Activity: SLA191B, Day: Wednesday, Time: 12:00:00, Room: Roman201, Facilitator: Glen
-Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Roman216, Facilitator: Richards
-Activity: SLA100B, Day: Wednesday, Time: 14:00:00, Room: Beach301, Facilitator: Lock
-Activity: SLA191A, Day: Wednesday, Time: 14:00:00, Room: Frank119, Facilitator: Banks
-Activity: SLA100A, Day: Wednesday, Time: 15:00:00, Room: Roman201, Facilitator: Lock
-Activity: SLA291, Day: Wednesday, Time: 15:00:00, Room: Loft310, Facilitator: Banks
-Activity: SLA304, Day: Wednesday, Time: 15:00:00, Room: Slater003, Facilitator: Numen
-Activity: SLA449, Day: Wednesday, Time: 15:00:00, Room: Beach301, Facilitator: Shaw
-Activity: SLA100B, Day: Friday, Time: 10:00:00, Room: Beach301, Facilitator: Zeldin
-Activity: SLA291, Day: Friday, Time: 10:00:00, Room: Beach201, Facilitator: Lock
-Activity: SLA303, Day: Friday, Time: 10:00:00, Room: Loft206, Facilitator: Shaw
-Activity: SLA191B, Day: Friday, Time: 11:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA449, Day: Friday, Time: 11:00:00, Room: Loft206, Facilitator: Shaw
-Activity: SLA100A, Day: Friday, Time: 12:00:00, Room: Loft206, Facilitator: Zeldin
-Activity: SLA451, Day: Friday, Time: 12:00:00, Room: Loft310, Facilitator: Richards
-Activity: SLA191A, Day: Friday, Time: 13:00:00, Room: Loft310, Facilitator: Zeldin
-Activity: SLA304, Day: Friday, Time: 13:00:00, Room: Frank119, Facilitator: Richards
-Activity: SLA201, Day: Friday, Time: 14:00:00, Room: Loft206, Facilitator: Singer
-Activity: SLA394, Day: Friday, Time: 15:00:00, Room: Roman201, Facilitator: Dr. Tyler
+Activity: SLA100B, Day: Monday, Time: 10:00:00, Room: Beach301, Facilitator: Lock
+Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Roman201, Facilitator: Lock
+Activity: SLA191A, Day: Monday, Time: 11:00:00, Room: Loft206, Facilitator: Zeldin
+Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Frank119, Facilitator: Singer
+Activity: SLA291, Day: Monday, Time: 12:00:00, Room: Loft206, Facilitator: Zeldin
+Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Slater003, Facilitator: Singer
+Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Loft206, Facilitator: Singer
+Activity: SLA191B, Day: Monday, Time: 15:00:00, Room: Roman201, Facilitator: Glen
+Activity: SLA201, Day: Monday, Time: 15:00:00, Room: Frank119, Facilitator: Banks
+Activity: SLA304, Day: Monday, Time: 15:00:00, Room: Slater003, Facilitator: Numen
+Activity: SLA451, Day: Monday, Time: 15:00:00, Room: Loft310, Facilitator: Singer
+Activity: SLA303, Day: Wednesday, Time: 10:00:00, Room: Beach201, Facilitator: Glen
+Activity: SLA191A, Day: Wednesday, Time: 11:00:00, Room: Frank119, Facilitator: Lock
+Activity: SLA449, Day: Wednesday, Time: 12:00:00, Room: Loft310, Facilitator: Singer
+Activity: SLA100B, Day: Wednesday, Time: 13:00:00, Room: Loft206, Facilitator: Lock
+Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Roman201, Facilitator: Singer
+Activity: SLA100A, Day: Wednesday, Time: 14:00:00, Room: Frank119, Facilitator: Lock
+Activity: SLA201, Day: Wednesday, Time: 14:00:00, Room: Roman201, Facilitator: Banks
+Activity: SLA291, Day: Wednesday, Time: 14:00:00, Room: Beach301, Facilitator: Singer
+Activity: SLA304, Day: Wednesday, Time: 14:00:00, Room: Roman216, Facilitator: Uther
+Activity: SLA191B, Day: Wednesday, Time: 15:00:00, Room: Roman201, Facilitator: Banks
+Activity: SLA451, Day: Wednesday, Time: 15:00:00, Room: Loft310, Facilitator: Uther
+Activity: SLA191B, Day: Friday, Time: 10:00:00, Room: Loft206, Facilitator: Lock
+Activity: SLA449, Day: Friday, Time: 10:00:00, Room: Frank119, Facilitator: Uther
+Activity: SLA191A, Day: Friday, Time: 11:00:00, Room: Frank119, Facilitator: Lock
+Activity: SLA304, Day: Friday, Time: 11:00:00, Room: Roman216, Facilitator: Banks
+Activity: SLA291, Day: Friday, Time: 12:00:00, Room: Loft206, Facilitator: Lock
+Activity: SLA201, Day: Friday, Time: 13:00:00, Room: Beach301, Facilitator: Banks
+Activity: SLA394, Day: Friday, Time: 13:00:00, Room: Slater003, Facilitator: Lock
+Activity: SLA100A, Day: Friday, Time: 14:00:00, Room: Frank119, Facilitator: Lock
+Activity: SLA100B, Day: Friday, Time: 14:00:00, Room: Beach301, Facilitator: Glen
+Activity: SLA303, Day: Friday, Time: 15:00:00, Room: Beach201, Facilitator: Banks
+Activity: SLA451, Day: Friday, Time: 15:00:00, Room: Loft310, Facilitator: Singer
 -------------------------------------------------
 Generation 9:
-Population: 474
-Best Fitness: 22.839018
+Population: 359
+Best Fitness: 23.126472
 Best Schedule:
-Activity: SLA291, Day: Monday, Time: 10:00:00, Room: Beach201, Facilitator: Zeldin
-Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Beach301, Facilitator: Glen
-Activity: SLA191B, Day: Monday, Time: 11:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Loft206, Facilitator: Singer
-Activity: SLA304, Day: Monday, Time: 11:00:00, Room: Roman216, Facilitator: Banks
-Activity: SLA100B, Day: Monday, Time: 12:00:00, Room: Loft310, Facilitator: Lock
-Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Beach301, Facilitator: Zeldin
-Activity: SLA191A, Day: Monday, Time: 13:00:00, Room: Loft206, Facilitator: Lock
-Activity: SLA201, Day: Monday, Time: 13:00:00, Room: Frank119, Facilitator: Singer
+Activity: SLA100B, Day: Monday, Time: 10:00:00, Room: Beach301, Facilitator: Lock
+Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Roman201, Facilitator: Lock
+Activity: SLA191A, Day: Monday, Time: 11:00:00, Room: Loft206, Facilitator: Zeldin
+Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Frank119, Facilitator: Singer
+Activity: SLA291, Day: Monday, Time: 12:00:00, Room: Loft206, Facilitator: Zeldin
+Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Frank119, Facilitator: Singer
 Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Frank119, Facilitator: Singer
-Activity: SLA451, Day: Monday, Time: 14:00:00, Room: Loft310, Facilitator: Uther
-Activity: SLA201, Day: Wednesday, Time: 10:00:00, Room: Frank119, Facilitator: Glen
-Activity: SLA451, Day: Wednesday, Time: 10:00:00, Room: Loft310, Facilitator: Singer
-Activity: SLA303, Day: Wednesday, Time: 11:00:00, Room: Frank119, Facilitator: Glen
-Activity: SLA191B, Day: Wednesday, Time: 12:00:00, Room: Loft310, Facilitator: Glen
-Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Beach201, Facilitator: Singer
-Activity: SLA100B, Day: Wednesday, Time: 14:00:00, Room: Beach301, Facilitator: Lock
-Activity: SLA191A, Day: Wednesday, Time: 14:00:00, Room: Frank119, Facilitator: Banks
-Activity: SLA100A, Day: Wednesday, Time: 15:00:00, Room: Roman201, Facilitator: Lock
-Activity: SLA291, Day: Wednesday, Time: 15:00:00, Room: Frank119, Facilitator: Banks
-Activity: SLA304, Day: Wednesday, Time: 15:00:00, Room: Roman216, Facilitator: Richards
-Activity: SLA449, Day: Wednesday, Time: 15:00:00, Room: Beach301, Facilitator: Shaw
-Activity: SLA100B, Day: Friday, Time: 10:00:00, Room: Roman201, Facilitator: Banks
-Activity: SLA291, Day: Friday, Time: 10:00:00, Room: Loft206, Facilitator: Zeldin
-Activity: SLA303, Day: Friday, Time: 10:00:00, Room: Beach301, Facilitator: Shaw
-Activity: SLA191B, Day: Friday, Time: 11:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA449, Day: Friday, Time: 11:00:00, Room: Loft206, Facilitator: Shaw
-Activity: SLA100A, Day: Friday, Time: 12:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA451, Day: Friday, Time: 12:00:00, Room: Loft310, Facilitator: Richards
-Activity: SLA191A, Day: Friday, Time: 13:00:00, Room: Beach201, Facilitator: Zeldin
-Activity: SLA304, Day: Friday, Time: 13:00:00, Room: Beach301, Facilitator: Banks
-Activity: SLA201, Day: Friday, Time: 14:00:00, Room: Beach301, Facilitator: Zeldin
-Activity: SLA394, Day: Friday, Time: 15:00:00, Room: Roman201, Facilitator: Zeldin
+Activity: SLA191B, Day: Monday, Time: 15:00:00, Room: Beach201, Facilitator: Lock
+Activity: SLA201, Day: Monday, Time: 15:00:00, Room: Loft206, Facilitator: Shaw
+Activity: SLA304, Day: Monday, Time: 15:00:00, Room: Roman201, Facilitator: Uther
+Activity: SLA451, Day: Monday, Time: 15:00:00, Room: Loft310, Facilitator: Singer
+Activity: SLA303, Day: Wednesday, Time: 10:00:00, Room: Beach201, Facilitator: Glen
+Activity: SLA191A, Day: Wednesday, Time: 11:00:00, Room: Frank119, Facilitator: Lock
+Activity: SLA449, Day: Wednesday, Time: 12:00:00, Room: Beach201, Facilitator: Singer
+Activity: SLA100B, Day: Wednesday, Time: 13:00:00, Room: Loft206, Facilitator: Lock
+Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Roman201, Facilitator: Singer
+Activity: SLA100A, Day: Wednesday, Time: 14:00:00, Room: Frank119, Facilitator: Lock
+Activity: SLA201, Day: Wednesday, Time: 14:00:00, Room: Beach201, Facilitator: Numen
+Activity: SLA291, Day: Wednesday, Time: 14:00:00, Room: Beach301, Facilitator: Singer
+Activity: SLA304, Day: Wednesday, Time: 14:00:00, Room: Roman216, Facilitator: Uther
+Activity: SLA191B, Day: Wednesday, Time: 15:00:00, Room: Roman201, Facilitator: Banks
+Activity: SLA451, Day: Wednesday, Time: 15:00:00, Room: Loft310, Facilitator: Singer
+Activity: SLA191B, Day: Friday, Time: 10:00:00, Room: Loft206, Facilitator: Lock
+Activity: SLA449, Day: Friday, Time: 10:00:00, Room: Beach201, Facilitator: Uther
+Activity: SLA191A, Day: Friday, Time: 11:00:00, Room: Frank119, Facilitator: Lock
+Activity: SLA304, Day: Friday, Time: 11:00:00, Room: Beach301, Facilitator: Banks
+Activity: SLA291, Day: Friday, Time: 12:00:00, Room: Beach301, Facilitator: Banks
+Activity: SLA201, Day: Friday, Time: 13:00:00, Room: Beach301, Facilitator: Banks
+Activity: SLA394, Day: Friday, Time: 13:00:00, Room: Slater003, Facilitator: Lock
+Activity: SLA100A, Day: Friday, Time: 14:00:00, Room: Frank119, Facilitator: Lock
+Activity: SLA100B, Day: Friday, Time: 14:00:00, Room: Beach301, Facilitator: Glen
+Activity: SLA303, Day: Friday, Time: 15:00:00, Room: Beach301, Facilitator: Glen
+Activity: SLA451, Day: Friday, Time: 15:00:00, Room: Loft310, Facilitator: Singer
 -------------------------------------------------
 Generation 10:
-Population: 1046
-Best Fitness: 23.820812
+Population: 376
+Best Fitness: 24.444954
 Best Schedule:
-Activity: SLA291, Day: Monday, Time: 10:00:00, Room: Beach201, Facilitator: Zeldin
-Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Beach301, Facilitator: Glen
-Activity: SLA191B, Day: Monday, Time: 11:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Loft206, Facilitator: Singer
-Activity: SLA304, Day: Monday, Time: 11:00:00, Room: Roman216, Facilitator: Banks
-Activity: SLA100B, Day: Monday, Time: 12:00:00, Room: Roman201, Facilitator: Banks
-Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Beach301, Facilitator: Zeldin
-Activity: SLA191A, Day: Monday, Time: 13:00:00, Room: Loft206, Facilitator: Lock
-Activity: SLA201, Day: Monday, Time: 13:00:00, Room: Frank119, Facilitator: Singer
-Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Frank119, Facilitator: Singer
-Activity: SLA451, Day: Monday, Time: 14:00:00, Room: Loft310, Facilitator: Richards
-Activity: SLA201, Day: Wednesday, Time: 10:00:00, Room: Frank119, Facilitator: Glen
-Activity: SLA451, Day: Wednesday, Time: 10:00:00, Room: Loft310, Facilitator: Singer
-Activity: SLA303, Day: Wednesday, Time: 11:00:00, Room: Frank119, Facilitator: Glen
-Activity: SLA191B, Day: Wednesday, Time: 12:00:00, Room: Loft310, Facilitator: Glen
-Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Roman216, Facilitator: Richards
-Activity: SLA100B, Day: Wednesday, Time: 14:00:00, Room: Beach301, Facilitator: Lock
-Activity: SLA191A, Day: Wednesday, Time: 14:00:00, Room: Frank119, Facilitator: Banks
-Activity: SLA100A, Day: Wednesday, Time: 15:00:00, Room: Roman201, Facilitator: Lock
-Activity: SLA291, Day: Wednesday, Time: 15:00:00, Room: Frank119, Facilitator: Banks
-Activity: SLA304, Day: Wednesday, Time: 15:00:00, Room: Roman216, Facilitator: Richards
-Activity: SLA449, Day: Wednesday, Time: 15:00:00, Room: Beach301, Facilitator: Shaw
-Activity: SLA100B, Day: Friday, Time: 10:00:00, Room: Roman201, Facilitator: Banks
-Activity: SLA291, Day: Friday, Time: 10:00:00, Room: Frank119, Facilitator: Zeldin
-Activity: SLA303, Day: Friday, Time: 10:00:00, Room: Beach301, Facilitator: Shaw
-Activity: SLA191B, Day: Friday, Time: 11:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA449, Day: Friday, Time: 11:00:00, Room: Loft206, Facilitator: Shaw
-Activity: SLA100A, Day: Friday, Time: 12:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA451, Day: Friday, Time: 12:00:00, Room: Loft310, Facilitator: Richards
-Activity: SLA191A, Day: Friday, Time: 13:00:00, Room: Beach201, Facilitator: Zeldin
-Activity: SLA304, Day: Friday, Time: 13:00:00, Room: Roman201, Facilitator: Banks
-Activity: SLA201, Day: Friday, Time: 14:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA394, Day: Friday, Time: 15:00:00, Room: Roman201, Facilitator: Zeldin
+Activity: SLA100B, Day: Monday, Time: 10:00:00, Room: Roman201, Facilitator: Lock
+Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Roman201, Facilitator: Lock
+Activity: SLA191A, Day: Monday, Time: 11:00:00, Room: Loft206, Facilitator: Zeldin
+Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Frank119, Facilitator: Singer
+Activity: SLA291, Day: Monday, Time: 12:00:00, Room: Loft206, Facilitator: Zeldin
+Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Slater003, Facilitator: Singer
+Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Beach201, Facilitator: Zeldin
+Activity: SLA191B, Day: Monday, Time: 15:00:00, Room: Roman201, Facilitator: Zeldin
+Activity: SLA201, Day: Monday, Time: 15:00:00, Room: Loft206, Facilitator: Shaw
+Activity: SLA304, Day: Monday, Time: 15:00:00, Room: Slater003, Facilitator: Numen
+Activity: SLA451, Day: Monday, Time: 15:00:00, Room: Loft310, Facilitator: Singer
+Activity: SLA303, Day: Wednesday, Time: 10:00:00, Room: Beach201, Facilitator: Glen
+Activity: SLA191A, Day: Wednesday, Time: 11:00:00, Room: Roman201, Facilitator: Glen
+Activity: SLA449, Day: Wednesday, Time: 12:00:00, Room: Beach301, Facilitator: Singer
+Activity: SLA100B, Day: Wednesday, Time: 13:00:00, Room: Loft206, Facilitator: Lock
+Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Roman201, Facilitator: Singer
+Activity: SLA100A, Day: Wednesday, Time: 14:00:00, Room: Frank119, Facilitator: Lock
+Activity: SLA201, Day: Wednesday, Time: 14:00:00, Room: Roman201, Facilitator: Glen
+Activity: SLA291, Day: Wednesday, Time: 14:00:00, Room: Beach301, Facilitator: Singer
+Activity: SLA304, Day: Wednesday, Time: 14:00:00, Room: Roman216, Facilitator: Uther
+Activity: SLA191B, Day: Wednesday, Time: 15:00:00, Room: Beach301, Facilitator: Glen
+Activity: SLA451, Day: Wednesday, Time: 15:00:00, Room: Loft310, Facilitator: Uther
+Activity: SLA191B, Day: Friday, Time: 10:00:00, Room: Loft206, Facilitator: Lock
+Activity: SLA449, Day: Friday, Time: 10:00:00, Room: Frank119, Facilitator: Singer
+Activity: SLA191A, Day: Friday, Time: 11:00:00, Room: Frank119, Facilitator: Lock
+Activity: SLA304, Day: Friday, Time: 11:00:00, Room: Roman216, Facilitator: Banks
+Activity: SLA291, Day: Friday, Time: 12:00:00, Room: Roman201, Facilitator: Banks
+Activity: SLA201, Day: Friday, Time: 13:00:00, Room: Beach301, Facilitator: Banks
+Activity: SLA394, Day: Friday, Time: 13:00:00, Room: Beach201, Facilitator: Richards
+Activity: SLA100A, Day: Friday, Time: 14:00:00, Room: Frank119, Facilitator: Lock
+Activity: SLA100B, Day: Friday, Time: 14:00:00, Room: Loft310, Facilitator: Numen
+Activity: SLA303, Day: Friday, Time: 15:00:00, Room: Loft206, Facilitator: Numen
+Activity: SLA451, Day: Friday, Time: 15:00:00, Room: Loft310, Facilitator: Singer
 -------------------------------------------------
 Generation 11:
-Population: 1666
-Best Fitness: 24.463987
+Population: 337
+Best Fitness: 25.391106
 Best Schedule:
-Activity: SLA291, Day: Monday, Time: 10:00:00, Room: Beach201, Facilitator: Zeldin
-Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Beach301, Facilitator: Glen
-Activity: SLA191B, Day: Monday, Time: 11:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Loft206, Facilitator: Singer
-Activity: SLA304, Day: Monday, Time: 11:00:00, Room: Roman216, Facilitator: Banks
-Activity: SLA100B, Day: Monday, Time: 12:00:00, Room: Roman201, Facilitator: Banks
-Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Beach301, Facilitator: Zeldin
-Activity: SLA191A, Day: Monday, Time: 13:00:00, Room: Beach301, Facilitator: Banks
-Activity: SLA201, Day: Monday, Time: 13:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Frank119, Facilitator: Singer
-Activity: SLA451, Day: Monday, Time: 14:00:00, Room: Loft310, Facilitator: Richards
-Activity: SLA201, Day: Wednesday, Time: 10:00:00, Room: Frank119, Facilitator: Glen
-Activity: SLA451, Day: Wednesday, Time: 10:00:00, Room: Loft310, Facilitator: Singer
-Activity: SLA303, Day: Wednesday, Time: 11:00:00, Room: Frank119, Facilitator: Glen
-Activity: SLA191B, Day: Wednesday, Time: 12:00:00, Room: Frank119, Facilitator: Lock
-Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA100B, Day: Wednesday, Time: 14:00:00, Room: Beach301, Facilitator: Lock
-Activity: SLA191A, Day: Wednesday, Time: 14:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA100A, Day: Wednesday, Time: 15:00:00, Room: Roman201, Facilitator: Lock
-Activity: SLA291, Day: Wednesday, Time: 15:00:00, Room: Loft310, Facilitator: Singer
-Activity: SLA304, Day: Wednesday, Time: 15:00:00, Room: Loft206, Facilitator: Numen
-Activity: SLA449, Day: Wednesday, Time: 15:00:00, Room: Beach301, Facilitator: Shaw
-Activity: SLA100B, Day: Friday, Time: 10:00:00, Room: Loft206, Facilitator: Numen
-Activity: SLA291, Day: Friday, Time: 10:00:00, Room: Frank119, Facilitator: Zeldin
-Activity: SLA303, Day: Friday, Time: 10:00:00, Room: Beach301, Facilitator: Shaw
-Activity: SLA191B, Day: Friday, Time: 11:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA449, Day: Friday, Time: 11:00:00, Room: Loft206, Facilitator: Shaw
-Activity: SLA100A, Day: Friday, Time: 12:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA451, Day: Friday, Time: 12:00:00, Room: Loft310, Facilitator: Shaw
-Activity: SLA191A, Day: Friday, Time: 13:00:00, Room: Beach201, Facilitator: Zeldin
-Activity: SLA304, Day: Friday, Time: 13:00:00, Room: Roman201, Facilitator: Banks
-Activity: SLA201, Day: Friday, Time: 14:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA394, Day: Friday, Time: 15:00:00, Room: Roman201, Facilitator: Zeldin
+Activity: SLA100B, Day: Monday, Time: 10:00:00, Room: Roman201, Facilitator: Lock
+Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Roman201, Facilitator: Lock
+Activity: SLA191A, Day: Monday, Time: 11:00:00, Room: Loft206, Facilitator: Zeldin
+Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Frank119, Facilitator: Singer
+Activity: SLA291, Day: Monday, Time: 12:00:00, Room: Loft206, Facilitator: Zeldin
+Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Slater003, Facilitator: Singer
+Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Loft206, Facilitator: Shaw
+Activity: SLA191B, Day: Monday, Time: 15:00:00, Room: Roman201, Facilitator: Zeldin
+Activity: SLA201, Day: Monday, Time: 15:00:00, Room: Loft206, Facilitator: Shaw
+Activity: SLA304, Day: Monday, Time: 15:00:00, Room: Beach301, Facilitator: Richards
+Activity: SLA451, Day: Monday, Time: 15:00:00, Room: Loft310, Facilitator: Singer
+Activity: SLA303, Day: Wednesday, Time: 10:00:00, Room: Beach201, Facilitator: Glen
+Activity: SLA191A, Day: Wednesday, Time: 11:00:00, Room: Roman201, Facilitator: Glen
+Activity: SLA449, Day: Wednesday, Time: 12:00:00, Room: Beach301, Facilitator: Singer
+Activity: SLA100B, Day: Wednesday, Time: 13:00:00, Room: Loft206, Facilitator: Lock
+Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Roman201, Facilitator: Singer
+Activity: SLA100A, Day: Wednesday, Time: 14:00:00, Room: Frank119, Facilitator: Zeldin
+Activity: SLA201, Day: Wednesday, Time: 14:00:00, Room: Roman201, Facilitator: Glen
+Activity: SLA291, Day: Wednesday, Time: 14:00:00, Room: Loft206, Facilitator: Singer
+Activity: SLA304, Day: Wednesday, Time: 14:00:00, Room: Roman216, Facilitator: Uther
+Activity: SLA191B, Day: Wednesday, Time: 15:00:00, Room: Beach301, Facilitator: Glen
+Activity: SLA451, Day: Wednesday, Time: 15:00:00, Room: Loft310, Facilitator: Singer
+Activity: SLA191B, Day: Friday, Time: 10:00:00, Room: Roman201, Facilitator: Lock
+Activity: SLA449, Day: Friday, Time: 10:00:00, Room: Frank119, Facilitator: Uther
+Activity: SLA191A, Day: Friday, Time: 11:00:00, Room: Beach201, Facilitator: Richards
+Activity: SLA304, Day: Friday, Time: 11:00:00, Room: Loft206, Facilitator: Uther
+Activity: SLA291, Day: Friday, Time: 12:00:00, Room: Beach301, Facilitator: Banks
+Activity: SLA201, Day: Friday, Time: 13:00:00, Room: Beach301, Facilitator: Banks
+Activity: SLA394, Day: Friday, Time: 13:00:00, Room: Roman201, Facilitator: Richards
+Activity: SLA100A, Day: Friday, Time: 14:00:00, Room: Frank119, Facilitator: Lock
+Activity: SLA100B, Day: Friday, Time: 14:00:00, Room: Beach301, Facilitator: Banks
+Activity: SLA303, Day: Friday, Time: 15:00:00, Room: Beach201, Facilitator: Banks
+Activity: SLA451, Day: Friday, Time: 15:00:00, Room: Loft310, Facilitator: Shaw
 -------------------------------------------------
 Generation 12:
-Population: 2443
-Best Fitness: 25.216434
+Population: 349
+Best Fitness: 25.94094
 Best Schedule:
-Activity: SLA291, Day: Monday, Time: 10:00:00, Room: Beach201, Facilitator: Zeldin
-Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Beach301, Facilitator: Glen
-Activity: SLA191B, Day: Monday, Time: 11:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Loft206, Facilitator: Singer
-Activity: SLA304, Day: Monday, Time: 11:00:00, Room: Roman216, Facilitator: Banks
-Activity: SLA100B, Day: Monday, Time: 12:00:00, Room: Loft310, Facilitator: Lock
-Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Roman216, Facilitator: Zeldin
-Activity: SLA191A, Day: Monday, Time: 13:00:00, Room: Loft310, Facilitator: Lock
-Activity: SLA201, Day: Monday, Time: 13:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Frank119, Facilitator: Singer
-Activity: SLA451, Day: Monday, Time: 14:00:00, Room: Loft310, Facilitator: Richards
-Activity: SLA201, Day: Wednesday, Time: 10:00:00, Room: Frank119, Facilitator: Glen
-Activity: SLA451, Day: Wednesday, Time: 10:00:00, Room: Loft310, Facilitator: Singer
-Activity: SLA303, Day: Wednesday, Time: 11:00:00, Room: Frank119, Facilitator: Glen
-Activity: SLA191B, Day: Wednesday, Time: 12:00:00, Room: Loft310, Facilitator: Zeldin
-Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Frank119, Facilitator: Zeldin
-Activity: SLA100B, Day: Wednesday, Time: 14:00:00, Room: Beach301, Facilitator: Lock
-Activity: SLA191A, Day: Wednesday, Time: 14:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA100A, Day: Wednesday, Time: 15:00:00, Room: Roman201, Facilitator: Lock
-Activity: SLA291, Day: Wednesday, Time: 15:00:00, Room: Loft310, Facilitator: Singer
-Activity: SLA304, Day: Wednesday, Time: 15:00:00, Room: Slater003, Facilitator: Numen
-Activity: SLA449, Day: Wednesday, Time: 15:00:00, Room: Beach301, Facilitator: Shaw
-Activity: SLA100B, Day: Friday, Time: 10:00:00, Room: Roman201, Facilitator: Banks
-Activity: SLA291, Day: Friday, Time: 10:00:00, Room: Loft310, Facilitator: Numen
-Activity: SLA303, Day: Friday, Time: 10:00:00, Room: Beach301, Facilitator: Zeldin
-Activity: SLA191B, Day: Friday, Time: 11:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA449, Day: Friday, Time: 11:00:00, Room: Loft206, Facilitator: Shaw
-Activity: SLA100A, Day: Friday, Time: 12:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA451, Day: Friday, Time: 12:00:00, Room: Loft310, Facilitator: Shaw
-Activity: SLA191A, Day: Friday, Time: 13:00:00, Room: Beach201, Facilitator: Zeldin
-Activity: SLA304, Day: Friday, Time: 13:00:00, Room: Roman201, Facilitator: Banks
-Activity: SLA201, Day: Friday, Time: 14:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA394, Day: Friday, Time: 15:00:00, Room: Roman201, Facilitator: Zeldin
+Activity: SLA100B, Day: Monday, Time: 10:00:00, Room: Roman201, Facilitator: Lock
+Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Roman201, Facilitator: Lock
+Activity: SLA191A, Day: Monday, Time: 11:00:00, Room: Loft206, Facilitator: Zeldin
+Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Frank119, Facilitator: Singer
+Activity: SLA291, Day: Monday, Time: 12:00:00, Room: Loft206, Facilitator: Zeldin
+Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Slater003, Facilitator: Singer
+Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Loft310, Facilitator: Shaw
+Activity: SLA191B, Day: Monday, Time: 15:00:00, Room: Roman201, Facilitator: Zeldin
+Activity: SLA201, Day: Monday, Time: 15:00:00, Room: Loft206, Facilitator: Shaw
+Activity: SLA304, Day: Monday, Time: 15:00:00, Room: Beach301, Facilitator: Numen
+Activity: SLA451, Day: Monday, Time: 15:00:00, Room: Loft310, Facilitator: Singer
+Activity: SLA303, Day: Wednesday, Time: 10:00:00, Room: Beach201, Facilitator: Glen
+Activity: SLA191A, Day: Wednesday, Time: 11:00:00, Room: Roman201, Facilitator: Glen
+Activity: SLA449, Day: Wednesday, Time: 12:00:00, Room: Beach201, Facilitator: Singer
+Activity: SLA100B, Day: Wednesday, Time: 13:00:00, Room: Loft206, Facilitator: Lock
+Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Roman216, Facilitator: Uther
+Activity: SLA100A, Day: Wednesday, Time: 14:00:00, Room: Loft206, Facilitator: Lock
+Activity: SLA201, Day: Wednesday, Time: 14:00:00, Room: Roman201, Facilitator: Banks
+Activity: SLA291, Day: Wednesday, Time: 14:00:00, Room: Loft310, Facilitator: Numen
+Activity: SLA304, Day: Wednesday, Time: 14:00:00, Room: Roman216, Facilitator: Uther
+Activity: SLA191B, Day: Wednesday, Time: 15:00:00, Room: Frank119, Facilitator: Numen
+Activity: SLA451, Day: Wednesday, Time: 15:00:00, Room: Loft310, Facilitator: Uther
+Activity: SLA191B, Day: Friday, Time: 10:00:00, Room: Frank119, Facilitator: Lock
+Activity: SLA449, Day: Friday, Time: 10:00:00, Room: Beach301, Facilitator: Shaw
+Activity: SLA191A, Day: Friday, Time: 11:00:00, Room: Frank119, Facilitator: Lock
+Activity: SLA304, Day: Friday, Time: 11:00:00, Room: Roman216, Facilitator: Banks
+Activity: SLA291, Day: Friday, Time: 12:00:00, Room: Beach301, Facilitator: Banks
+Activity: SLA201, Day: Friday, Time: 13:00:00, Room: Beach301, Facilitator: Banks
+Activity: SLA394, Day: Friday, Time: 13:00:00, Room: Beach201, Facilitator: Richards
+Activity: SLA100A, Day: Friday, Time: 14:00:00, Room: Loft206, Facilitator: Richards
+Activity: SLA100B, Day: Friday, Time: 14:00:00, Room: Beach301, Facilitator: Glen
+Activity: SLA303, Day: Friday, Time: 15:00:00, Room: Beach301, Facilitator: Glen
+Activity: SLA451, Day: Friday, Time: 15:00:00, Room: Loft310, Facilitator: Richards
 -------------------------------------------------
 Generation 13:
-Population: 2642
-Best Fitness: 25.949867
+Population: 451
+Best Fitness: 26.430136
 Best Schedule:
-Activity: SLA291, Day: Monday, Time: 10:00:00, Room: Beach201, Facilitator: Zeldin
-Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Beach301, Facilitator: Glen
-Activity: SLA191B, Day: Monday, Time: 11:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Loft206, Facilitator: Singer
-Activity: SLA304, Day: Monday, Time: 11:00:00, Room: Roman216, Facilitator: Banks
-Activity: SLA100B, Day: Monday, Time: 12:00:00, Room: Loft310, Facilitator: Lock
-Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Roman216, Facilitator: Zeldin
-Activity: SLA191A, Day: Monday, Time: 13:00:00, Room: Loft206, Facilitator: Lock
-Activity: SLA201, Day: Monday, Time: 13:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Frank119, Facilitator: Singer
-Activity: SLA451, Day: Monday, Time: 14:00:00, Room: Loft310, Facilitator: Richards
-Activity: SLA201, Day: Wednesday, Time: 10:00:00, Room: Frank119, Facilitator: Glen
-Activity: SLA451, Day: Wednesday, Time: 10:00:00, Room: Loft310, Facilitator: Singer
-Activity: SLA303, Day: Wednesday, Time: 11:00:00, Room: Frank119, Facilitator: Glen
-Activity: SLA191B, Day: Wednesday, Time: 12:00:00, Room: Loft310, Facilitator: Glen
-Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Roman216, Facilitator: Richards
-Activity: SLA100B, Day: Wednesday, Time: 14:00:00, Room: Beach301, Facilitator: Lock
-Activity: SLA191A, Day: Wednesday, Time: 14:00:00, Room: Frank119, Facilitator: Banks
-Activity: SLA100A, Day: Wednesday, Time: 15:00:00, Room: Roman201, Facilitator: Lock
-Activity: SLA291, Day: Wednesday, Time: 15:00:00, Room: Loft310, Facilitator: Singer
-Activity: SLA304, Day: Wednesday, Time: 15:00:00, Room: Slater003, Facilitator: Banks
-Activity: SLA449, Day: Wednesday, Time: 15:00:00, Room: Beach301, Facilitator: Shaw
-Activity: SLA100B, Day: Friday, Time: 10:00:00, Room: Roman201, Facilitator: Banks
-Activity: SLA291, Day: Friday, Time: 10:00:00, Room: Frank119, Facilitator: Zeldin
-Activity: SLA303, Day: Friday, Time: 10:00:00, Room: Beach301, Facilitator: Shaw
-Activity: SLA191B, Day: Friday, Time: 11:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA449, Day: Friday, Time: 11:00:00, Room: Loft206, Facilitator: Shaw
-Activity: SLA100A, Day: Friday, Time: 12:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA451, Day: Friday, Time: 12:00:00, Room: Loft310, Facilitator: Shaw
-Activity: SLA191A, Day: Friday, Time: 13:00:00, Room: Beach201, Facilitator: Zeldin
-Activity: SLA304, Day: Friday, Time: 13:00:00, Room: Frank119, Facilitator: Richards
-Activity: SLA201, Day: Friday, Time: 14:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA394, Day: Friday, Time: 15:00:00, Room: Roman201, Facilitator: Zeldin
+Activity: SLA100B, Day: Monday, Time: 10:00:00, Room: Roman201, Facilitator: Lock
+Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Roman201, Facilitator: Lock
+Activity: SLA191A, Day: Monday, Time: 11:00:00, Room: Loft206, Facilitator: Zeldin
+Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Frank119, Facilitator: Singer
+Activity: SLA291, Day: Monday, Time: 12:00:00, Room: Loft206, Facilitator: Zeldin
+Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Slater003, Facilitator: Singer
+Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Loft310, Facilitator: Shaw
+Activity: SLA191B, Day: Monday, Time: 15:00:00, Room: Roman201, Facilitator: Zeldin
+Activity: SLA201, Day: Monday, Time: 15:00:00, Room: Loft206, Facilitator: Shaw
+Activity: SLA304, Day: Monday, Time: 15:00:00, Room: Beach301, Facilitator: Numen
+Activity: SLA451, Day: Monday, Time: 15:00:00, Room: Loft310, Facilitator: Singer
+Activity: SLA303, Day: Wednesday, Time: 10:00:00, Room: Beach201, Facilitator: Glen
+Activity: SLA191A, Day: Wednesday, Time: 11:00:00, Room: Roman201, Facilitator: Glen
+Activity: SLA449, Day: Wednesday, Time: 12:00:00, Room: Beach201, Facilitator: Uther
+Activity: SLA100B, Day: Wednesday, Time: 13:00:00, Room: Loft206, Facilitator: Lock
+Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Roman216, Facilitator: Uther
+Activity: SLA100A, Day: Wednesday, Time: 14:00:00, Room: Loft206, Facilitator: Lock
+Activity: SLA201, Day: Wednesday, Time: 14:00:00, Room: Beach201, Facilitator: Shaw
+Activity: SLA291, Day: Wednesday, Time: 14:00:00, Room: Loft310, Facilitator: Numen
+Activity: SLA304, Day: Wednesday, Time: 14:00:00, Room: Slater003, Facilitator: Uther
+Activity: SLA191B, Day: Wednesday, Time: 15:00:00, Room: Frank119, Facilitator: Numen
+Activity: SLA451, Day: Wednesday, Time: 15:00:00, Room: Loft310, Facilitator: Uther
+Activity: SLA191B, Day: Friday, Time: 10:00:00, Room: Frank119, Facilitator: Lock
+Activity: SLA449, Day: Friday, Time: 10:00:00, Room: Beach301, Facilitator: Shaw
+Activity: SLA191A, Day: Friday, Time: 11:00:00, Room: Frank119, Facilitator: Lock
+Activity: SLA304, Day: Friday, Time: 11:00:00, Room: Roman216, Facilitator: Banks
+Activity: SLA291, Day: Friday, Time: 12:00:00, Room: Beach301, Facilitator: Banks
+Activity: SLA201, Day: Friday, Time: 13:00:00, Room: Roman201, Facilitator: Banks
+Activity: SLA394, Day: Friday, Time: 13:00:00, Room: Beach201, Facilitator: Richards
+Activity: SLA100A, Day: Friday, Time: 14:00:00, Room: Loft310, Facilitator: Richards
+Activity: SLA100B, Day: Friday, Time: 14:00:00, Room: Roman201, Facilitator: Glen
+Activity: SLA303, Day: Friday, Time: 15:00:00, Room: Beach301, Facilitator: Glen
+Activity: SLA451, Day: Friday, Time: 15:00:00, Room: Loft310, Facilitator: Richards
 -------------------------------------------------
 Generation 14:
-Population: 1858
-Best Fitness: 26.53231
+Population: 541
+Best Fitness: 27.132086
 Best Schedule:
-Activity: SLA291, Day: Monday, Time: 10:00:00, Room: Beach201, Facilitator: Zeldin
-Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Loft310, Facilitator: Lock
-Activity: SLA191B, Day: Monday, Time: 11:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Loft206, Facilitator: Singer
-Activity: SLA304, Day: Monday, Time: 11:00:00, Room: Roman216, Facilitator: Banks
-Activity: SLA100B, Day: Monday, Time: 12:00:00, Room: Loft310, Facilitator: Lock
+Activity: SLA100B, Day: Monday, Time: 10:00:00, Room: Roman201, Facilitator: Lock
+Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Roman201, Facilitator: Lock
+Activity: SLA191A, Day: Monday, Time: 11:00:00, Room: Loft206, Facilitator: Zeldin
+Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Frank119, Facilitator: Singer
+Activity: SLA291, Day: Monday, Time: 12:00:00, Room: Loft206, Facilitator: Zeldin
 Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Slater003, Facilitator: Singer
-Activity: SLA191A, Day: Monday, Time: 13:00:00, Room: Loft206, Facilitator: Lock
-Activity: SLA201, Day: Monday, Time: 13:00:00, Room: Frank119, Facilitator: Singer
-Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Frank119, Facilitator: Singer
-Activity: SLA451, Day: Monday, Time: 14:00:00, Room: Loft310, Facilitator: Richards
-Activity: SLA201, Day: Wednesday, Time: 10:00:00, Room: Frank119, Facilitator: Glen
-Activity: SLA451, Day: Wednesday, Time: 10:00:00, Room: Loft310, Facilitator: Singer
-Activity: SLA303, Day: Wednesday, Time: 11:00:00, Room: Frank119, Facilitator: Glen
-Activity: SLA191B, Day: Wednesday, Time: 12:00:00, Room: Loft310, Facilitator: Glen
-Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Roman216, Facilitator: Richards
-Activity: SLA100B, Day: Wednesday, Time: 14:00:00, Room: Beach201, Facilitator: Numen
-Activity: SLA191A, Day: Wednesday, Time: 14:00:00, Room: Frank119, Facilitator: Banks
-Activity: SLA100A, Day: Wednesday, Time: 15:00:00, Room: Frank119, Facilitator: Banks
-Activity: SLA291, Day: Wednesday, Time: 15:00:00, Room: Loft310, Facilitator: Lock
-Activity: SLA304, Day: Wednesday, Time: 15:00:00, Room: Loft206, Facilitator: Numen
-Activity: SLA449, Day: Wednesday, Time: 15:00:00, Room: Beach301, Facilitator: Shaw
-Activity: SLA100B, Day: Friday, Time: 10:00:00, Room: Roman201, Facilitator: Banks
-Activity: SLA291, Day: Friday, Time: 10:00:00, Room: Loft310, Facilitator: Numen
-Activity: SLA303, Day: Friday, Time: 10:00:00, Room: Beach301, Facilitator: Zeldin
-Activity: SLA191B, Day: Friday, Time: 11:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA449, Day: Friday, Time: 11:00:00, Room: Loft206, Facilitator: Shaw
-Activity: SLA100A, Day: Friday, Time: 12:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA451, Day: Friday, Time: 12:00:00, Room: Loft310, Facilitator: Shaw
-Activity: SLA191A, Day: Friday, Time: 13:00:00, Room: Beach201, Facilitator: Zeldin
-Activity: SLA304, Day: Friday, Time: 13:00:00, Room: Frank119, Facilitator: Richards
-Activity: SLA201, Day: Friday, Time: 14:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA394, Day: Friday, Time: 15:00:00, Room: Roman201, Facilitator: Zeldin
--------------------------------------------------
-Generation 15:
-Population: 1144
-Best Fitness: 26.955954
-Best Schedule:
-Activity: SLA291, Day: Monday, Time: 10:00:00, Room: Beach201, Facilitator: Zeldin
-Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Loft310, Facilitator: Lock
-Activity: SLA191B, Day: Monday, Time: 11:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Loft206, Facilitator: Singer
-Activity: SLA304, Day: Monday, Time: 11:00:00, Room: Roman216, Facilitator: Banks
-Activity: SLA100B, Day: Monday, Time: 12:00:00, Room: Loft310, Facilitator: Lock
-Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Frank119, Facilitator: Singer
-Activity: SLA191A, Day: Monday, Time: 13:00:00, Room: Loft206, Facilitator: Lock
-Activity: SLA201, Day: Monday, Time: 13:00:00, Room: Frank119, Facilitator: Singer
-Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Frank119, Facilitator: Singer
-Activity: SLA451, Day: Monday, Time: 14:00:00, Room: Loft310, Facilitator: Richards
-Activity: SLA201, Day: Wednesday, Time: 10:00:00, Room: Frank119, Facilitator: Glen
-Activity: SLA451, Day: Wednesday, Time: 10:00:00, Room: Loft310, Facilitator: Singer
-Activity: SLA303, Day: Wednesday, Time: 11:00:00, Room: Frank119, Facilitator: Glen
-Activity: SLA191B, Day: Wednesday, Time: 12:00:00, Room: Loft310, Facilitator: Glen
-Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Roman216, Facilitator: Richards
-Activity: SLA100B, Day: Wednesday, Time: 14:00:00, Room: Beach201, Facilitator: Numen
-Activity: SLA191A, Day: Wednesday, Time: 14:00:00, Room: Frank119, Facilitator: Banks
-Activity: SLA100A, Day: Wednesday, Time: 15:00:00, Room: Frank119, Facilitator: Banks
-Activity: SLA291, Day: Wednesday, Time: 15:00:00, Room: Loft310, Facilitator: Lock
-Activity: SLA304, Day: Wednesday, Time: 15:00:00, Room: Loft206, Facilitator: Numen
-Activity: SLA449, Day: Wednesday, Time: 15:00:00, Room: Beach301, Facilitator: Shaw
-Activity: SLA100B, Day: Friday, Time: 10:00:00, Room: Roman201, Facilitator: Banks
-Activity: SLA291, Day: Friday, Time: 10:00:00, Room: Loft310, Facilitator: Numen
-Activity: SLA303, Day: Friday, Time: 10:00:00, Room: Beach301, Facilitator: Zeldin
-Activity: SLA191B, Day: Friday, Time: 11:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA449, Day: Friday, Time: 11:00:00, Room: Loft206, Facilitator: Shaw
-Activity: SLA100A, Day: Friday, Time: 12:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA451, Day: Friday, Time: 12:00:00, Room: Loft310, Facilitator: Shaw
-Activity: SLA191A, Day: Friday, Time: 13:00:00, Room: Beach201, Facilitator: Zeldin
-Activity: SLA304, Day: Friday, Time: 13:00:00, Room: Frank119, Facilitator: Richards
-Activity: SLA201, Day: Friday, Time: 14:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA394, Day: Friday, Time: 15:00:00, Room: Roman201, Facilitator: Zeldin
--------------------------------------------------
-Generation 16:
-Population: 428
-Best Fitness: 27.39228
-Best Schedule:
-Activity: SLA291, Day: Monday, Time: 10:00:00, Room: Beach201, Facilitator: Zeldin
-Activity: SLA100A, Day: Monday, Time: 11:00:00, Room: Loft310, Facilitator: Lock
-Activity: SLA191B, Day: Monday, Time: 11:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA303, Day: Monday, Time: 11:00:00, Room: Loft206, Facilitator: Singer
-Activity: SLA304, Day: Monday, Time: 11:00:00, Room: Roman216, Facilitator: Banks
-Activity: SLA100B, Day: Monday, Time: 12:00:00, Room: Loft310, Facilitator: Lock
-Activity: SLA394, Day: Monday, Time: 12:00:00, Room: Roman216, Facilitator: Zeldin
-Activity: SLA191A, Day: Monday, Time: 13:00:00, Room: Loft206, Facilitator: Lock
-Activity: SLA201, Day: Monday, Time: 13:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Frank119, Facilitator: Singer
-Activity: SLA451, Day: Monday, Time: 14:00:00, Room: Loft310, Facilitator: Richards
-Activity: SLA201, Day: Wednesday, Time: 10:00:00, Room: Frank119, Facilitator: Glen
-Activity: SLA451, Day: Wednesday, Time: 10:00:00, Room: Loft310, Facilitator: Singer
-Activity: SLA303, Day: Wednesday, Time: 11:00:00, Room: Frank119, Facilitator: Glen
-Activity: SLA191B, Day: Wednesday, Time: 12:00:00, Room: Loft310, Facilitator: Glen
-Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Roman216, Facilitator: Richards
-Activity: SLA100B, Day: Wednesday, Time: 14:00:00, Room: Beach201, Facilitator: Numen
-Activity: SLA191A, Day: Wednesday, Time: 14:00:00, Room: Frank119, Facilitator: Banks
-Activity: SLA100A, Day: Wednesday, Time: 15:00:00, Room: Frank119, Facilitator: Banks
-Activity: SLA291, Day: Wednesday, Time: 15:00:00, Room: Loft310, Facilitator: Singer
-Activity: SLA304, Day: Wednesday, Time: 15:00:00, Room: Loft206, Facilitator: Numen
-Activity: SLA449, Day: Wednesday, Time: 15:00:00, Room: Beach301, Facilitator: Shaw
-Activity: SLA100B, Day: Friday, Time: 10:00:00, Room: Roman201, Facilitator: Banks
-Activity: SLA291, Day: Friday, Time: 10:00:00, Room: Loft310, Facilitator: Numen
-Activity: SLA303, Day: Friday, Time: 10:00:00, Room: Beach301, Facilitator: Zeldin
-Activity: SLA191B, Day: Friday, Time: 11:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA449, Day: Friday, Time: 11:00:00, Room: Loft206, Facilitator: Shaw
-Activity: SLA100A, Day: Friday, Time: 12:00:00, Room: Roman201, Facilitator: Zeldin
-Activity: SLA451, Day: Friday, Time: 12:00:00, Room: Loft310, Facilitator: Shaw
-Activity: SLA191A, Day: Friday, Time: 13:00:00, Room: Beach201, Facilitator: Zeldin
-Activity: SLA304, Day: Friday, Time: 13:00:00, Room: Frank119, Facilitator: Richards
-Activity: SLA201, Day: Friday, Time: 14:00:00, Room: Beach301, Facilitator: Zeldin
-Activity: SLA394, Day: Friday, Time: 15:00:00, Room: Roman201, Facilitator: Zeldin
+Activity: SLA449, Day: Monday, Time: 14:00:00, Room: Loft206, Facilitator: Shaw
+Activity: SLA191B, Day: Monday, Time: 15:00:00, Room: Roman201, Facilitator: Zeldin
+Activity: SLA201, Day: Monday, Time: 15:00:00, Room: Loft206, Facilitator: Shaw
+Activity: SLA304, Day: Monday, Time: 15:00:00, Room: Beach301, Facilitator: Numen
+Activity: SLA451, Day: Monday, Time: 15:00:00, Room: Loft310, Facilitator: Singer
+Activity: SLA303, Day: Wednesday, Time: 10:00:00, Room: Beach201, Facilitator: Glen
+Activity: SLA191A, Day: Wednesday, Time: 11:00:00, Room: Roman201, Facilitator: Glen
+Activity: SLA449, Day: Wednesday, Time: 12:00:00, Room: Beach201, Facilitator: Uther
+Activity: SLA100B, Day: Wednesday, Time: 13:00:00, Room: Beach301, Facilitator: Zeldin
+Activity: SLA394, Day: Wednesday, Time: 13:00:00, Room: Roman216, Facilitator: Uther
+Activity: SLA100A, Day: Wednesday, Time: 14:00:00, Room: Frank119, Facilitator: Zeldin
+Activity: SLA201, Day: Wednesday, Time: 14:00:00, Room: Roman201, Facilitator: Banks
+Activity: SLA291, Day: Wednesday, Time: 14:00:00, Room: Loft310, Facilitator: Numen
+Activity: SLA304, Day: Wednesday, Time: 14:00:00, Room: Roman216, Facilitator: Uther
+Activity: SLA191B, Day: Wednesday, Time: 15:00:00, Room: Frank119, Facilitator: Numen
+Activity: SLA451, Day: Wednesday, Time: 15:00:00, Room: Loft310, Facilitator: Zeldin
+Activity: SLA191B, Day: Friday, Time: 10:00:00, Room: Frank119, Facilitator: Lock
+Activity: SLA449, Day: Friday, Time: 10:00:00, Room: Loft206, Facilitator: Shaw
+Activity: SLA191A, Day: Friday, Time: 11:00:00, Room: Frank119, Facilitator: Lock
+Activity: SLA304, Day: Friday, Time: 11:00:00, Room: Beach301, Facilitator: Banks
+Activity: SLA291, Day: Friday, Time: 12:00:00, Room: Beach301, Facilitator: Banks
+Activity: SLA201, Day: Friday, Time: 13:00:00, Room: Beach301, Facilitator: Banks
+Activity: SLA394, Day: Friday, Time: 13:00:00, Room: Beach201, Facilitator: Richards
+Activity: SLA100A, Day: Friday, Time: 14:00:00, Room: Loft206, Facilitator: Richards
+Activity: SLA100B, Day: Friday, Time: 14:00:00, Room: Roman201, Facilitator: Glen
+Activity: SLA303, Day: Friday, Time: 15:00:00, Room: Beach301, Facilitator: Glen
+Activity: SLA451, Day: Friday, Time: 15:00:00, Room: Loft310, Facilitator: Richards
 -------------------------------------------------

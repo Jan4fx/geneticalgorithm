@@ -38,7 +38,7 @@ namespace GeneticAlgorithmSpaceUtilization
         static void Main(string[] args)
         {
             File.WriteAllText("SavedData/GenerationBestSchedule.txt", string.Empty);
-            File.WriteAllText("SavedData/AllSchedules.txt", string.Empty);
+            //File.WriteAllText("SavedData/AllSchedules.txt", string.Empty);
             InitializeData();
             List<Schedule> population = GenerateInitialPopulation(PopulationSize);
             Tuple<Schedule, int> result = GeneticAlgorithm(population);
@@ -57,13 +57,13 @@ namespace GeneticAlgorithmSpaceUtilization
         static void InitializeData()
         {
             Console.WriteLine("Initializing Data ...");
-            // Initialize example activities
+            // Initialize activities
             activities = ActivitiesData.GetActivities();
 
-            // Initialize example rooms
+            // Initialize rooms
             rooms = RoomsData.GetRooms();
 
-            // Initialize example facilitators
+            // Initialize facilitators
             facilitators = FacilitatorsData.GetFacilitators();
 
             // Restrict activity start times
